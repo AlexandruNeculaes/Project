@@ -25,21 +25,21 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" style="background-color: #FFFF00;" id="navbarNav">
+              <div class="collapse navbar-collapse" style="background-color:tomato;" id="navbarNav">
                 <ul class="navbar-nav m-lg-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Shop
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Rackets</a></li>
-                      <li><a class="dropdown-item" href="#">Tennis balls</a></li>
-                      <li><a class="dropdown-item" href="#">Tennis shoes</a></li>
-                      <li><a class="dropdown-item" href="#">Clothing</a></li>
-                      <li><a class="dropdown-item" href="#">Accessories</a></li>
+                      <li><a class="dropdown-item" href="#rackets">Rackets</a></li>
+                      <li><a class="dropdown-item" href="#tennisBalls">Tennis balls</a></li>
+                      <li><a class="dropdown-item" href="#tennisShoes">Tennis shoes</a></li>
+                      <li><a class="dropdown-item" href="#clothing">Clothing</a></li>
+                      <li><a class="dropdown-item" href="#accessories">Accessories</a></li>
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
@@ -57,11 +57,11 @@
                       Sale
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Rackets</a></li>
-                      <li><a class="dropdown-item" href="#">Tennis balls</a></li>
-                      <li><a class="dropdown-item" href="#">Tennis shoes</a></li>
-                      <li><a class="dropdown-item" href="#">Clothing</a></li>
-                      <li><a class="dropdown-item" href="#">Accessories</a></li>
+                      <li><a class="dropdown-item" href="#rackets">Rackets</a></li>
+                      <li><a class="dropdown-item" href="#tennisBalls">Tennis balls</a></li>
+                      <li><a class="dropdown-item" href="#tennisShoes">Tennis shoes</a></li>
+                      <li><a class="dropdown-item" href="#clothing">Clothing</a></li>
+                      <li><a class="dropdown-item" href="#accessories">Accessories</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -71,18 +71,40 @@
 
                 <ul class="navbar-nav ml-auto">
 					<!-- This will put a link into the navigation bar,
-                     so the user can check which items are currently in the shopping cart,
-                     and also show if there are any products in it at all, or not. -->
+                     that will pop up a modal of shopping cart. This can be closed or link to shop page. -->
 					<li class="nav-item">
-						<a class="nav-link" href="/cart/">
-							<i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart
-							<span class="badge">1</span>
+						<a class="nav-link">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+			  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+			</svg>
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				  </div>
+				  <div class="modal-body">
+					<p>Your cart is currently empty. Click continue shopping to check out our latest products!</p>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<a href="shop.html" class="btn btn-primary" role="button">Continue Shopping</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
 						</a>
 					</li>
 				</ul>
               </div>
             </div>
-			</nav>
+          </nav>
 						  
 			<div class="container">
 						  <div class="card bg-dark text-white">
@@ -91,7 +113,7 @@
 				  </div>
 				</div>
 				
-				<nav class="navbar navbar-light bg-light">
+				<nav class="navbar navbar-light bg-light" id="rackets">
 				  <div class="container-fluid">
 					<a class="navbar-brand" href="#">
 					  <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
@@ -145,7 +167,7 @@
 					<div class="row row-cols-1 row-cols-md-3 g-4">
 				  <div class="col">
 					<div class="card h-100">
-					  <img src="../images/Prostaff97ULv13.jpeg" class="card-img-top" alt="...">
+					  <img src="#" class="card-img-top" alt="...">
 					  <div class="card-body">
 						<h5 class="card-title">Card title</h5>
 						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -158,7 +180,7 @@
 				  </div>
 				  <div class="col">
 					<div class="card h-100">
-					  <img src="../images/Prostaffv13.jfif" class="card-img-top" alt="...">
+					  <img src="#" class="card-img-top" alt="...">
 					  <div class="card-body">
 						<h5 class="card-title">Card title</h5>
 						<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -184,7 +206,7 @@
 				  </div>
 				</div>
 
-				<nav class="navbar navbar-light bg-light">
+				<nav class="navbar navbar-light bg-light" id="tennisBalls">
 				  <div class="container-fluid">
 					<a class="navbar-brand" href="#">
 					  <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
@@ -235,7 +257,7 @@
 				  </div>
 				</div>
 				
-				<nav class="navbar navbar-light bg-light">
+				<nav class="navbar navbar-light bg-light" id="tennisShoes">
 				  <div class="container-fluid">
 					<a class="navbar-brand" href="#">
 					  <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
@@ -286,7 +308,7 @@
 				  </div>
 				</div>
 
-			<nav class="navbar navbar-light bg-light">
+			<nav class="navbar navbar-light bg-light" id="clothing">
 				  <div class="container-fluid">
 					<a class="navbar-brand" href="#">
 					  <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
@@ -334,7 +356,7 @@
 				  </div>
 				</div>
 				
-					<nav class="navbar navbar-light bg-light">
+					<nav class="navbar navbar-light bg-light" id="accessories">
 				  <div class="container-fluid">
 					<a class="navbar-brand" href="#">
 					  <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
