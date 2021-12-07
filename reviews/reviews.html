@@ -64,6 +64,201 @@
                     <a class="nav-link" role="button" href="reviews.html">Reviews</a>
                   </li>
                 </ul>
+				  <!-- Cart -->
+                <ul class="navbar-nav ml-auto">
+                <!-- This will put a link into the navigation bar,
+                that will pop up a modal of shopping cart. This can be closed or link to shop page. -->
+                  <li class="nav-item">
+                    <a class="nav-link">
+                      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <p>Your cart is currently empty. Click continue shopping to check out our latest products!</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <a href="shop/shop.html" class="btn btn-primary" role="button">Continue Shopping</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+				</div>
+			</div>
+		</nav>
+
+			<!-- Headline -->
+			
+<div class="justify-content-center">
+	<div class="col-12">
+		<!-- Page Headline, so the user knows which page they are on -->
+		<br>
+		<h2 class="text-center">Customer Reviews</h2>
+	</div>
+</div>
+
+
+			<!-- Row for search bar for the products -->
+			
+			
+
+			<!-- Login, Register and Contact forms, users Profile, Shop, Cart -->
+			
+	<div class="col-md-12">
+		<!-- Title section so the users knows what to expect on this page -->
+		<h3 class="text-center">Did you enjoy your experience?</h3>
+		<p class="text-center">If you have any comments and wish to leave a review please do so below. We really appreciated your feedback.</p>
+	</div>
+
+	<div class="col-md-12">
+
+		<!-- Here the user can see the shared Reviews and the button for viewing -->
+		
+		<div class="card mb-3 w-75 mx-auto">
+			<h5 class="card-header" id="dan">Review</h5>
+			<div class="card-body">
+				<h5 class="card-title text-center">Really good quality products</h5>
+				<p class="card-text text-center">I heard about this place from a friend and I am glad I did. All products were really good quality and were delivered on time. I got the new Rafa edition racket and love it. I will definately be recommending this store to a friend and cant wait to order more tennis gear.</p>
+				<div class="card-footer text-muted">19 November, 2021, 9:47 a.m.<p class="card-text text-right added">
+						Dan</p>
+				</div>
+				<a href="#dan"><img src="../images/like.png" width="35" height="35"></a>
+			</div>
+		</div>
+		
+		<div class="card mb-3 w-75 mx-auto">
+			<h5 class="card-header" id="alex">Review</h5>
+			<div class="card-body">
+				<h5 class="card-title text-center">Brilliant customer service</h5>
+				<p class="card-text text-center">I loved my experience shopping with TennisMania. They offer really good customer service and delivered well on time! I will definately be buying more products from them soon.</p>
+				<div class="card-footer text-muted">23 November, 2021, 7:52 p.m.<p class="card-text text-right added">
+						Alex</p>
+				</div>
+				<a href="#alex"><img src="../images/like.png" width="35" height="35"></a>
+			</div>
+		</div>
+		
+		<div class="card mb-3 w-75 mx-auto">
+			<h5 class="card-header" id="ryan">Review</h5>
+			<div class="card-body">
+				<h5 class="card-title text-center">Top quality service</h5>
+				<p class="card-text text-center">I love my new Wilson racket and bag. They are good quality and I hope they will last a long time as the material feels good. Delivery was on time and overall the service was really good. I will be ordering my tennis gear from TennisMania from now on! </p>
+				<div class="card-footer text-muted">27 November, 2021, 3:27 p.m.<p class="card-text text-right added">
+						Ryan</p>
+				</div>
+				<a href="#ryan"><img src="../images/like.png" width="35" height="35"></a>
+			</div>
+		</div>
+		
+
+
+	</div>
+     
+<!-- Button for the user to be able to Add Review-->
+<div class="justify-content-center">
+	<div class="col-12 text-center d-block">
+		<!-- Button to add review  -->
+		<a href="/review/add/" class="btn btn-primary rounded-1 btn-md justify-content-center mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Add Your
+			Review</a>
+			
+			        <!-- Modal -->
+                      <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">We're Sorry</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <p>Due to the very busy Christmas period our website is undergoing some maintenance and while we continue to offer our latest products, we cannot take reviews at the moment. We can't wait to hear your feedback when we have everything back up and running. </p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <a href="../index.html" class="btn btn-primary" role="button">Back to Home</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+	</div>
+</div>
+              <br>
+			   <br>
+				<br>
+	<footer class="page-footer">
+		<div class="container-fluid" style="background-color:tomato;" id="footer">
+			<div class="row top">
+				<div class="col-md-4 text-center mr-auto" style="padding: 15px;">
+					<ul class="list-unstyled footer-list">
+						<!-- Link for about us -->
+						<li>
+						  <a href="#footer">
+							About Us
+						  </a>
+						</li>
+						<!-- Link to contact form -->
+						<li>
+						  <a href="#footer">
+							Contact
+						  </a>
+						</li>
+						<!-- Link for return policy -->
+						<li>
+						  <a href="#footer">
+							Return Policy
+						  </a>
+						</li>
+						<!-- Link for delivery information -->
+						<li>
+						  <a href="#footer">
+							Delivery Information
+						  </a>
+						</li>
+						<li>
+						  <a href="#footer">
+							Terms & Conditions
+						  </a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4 text-center bottom" style="padding: 35px;">
+
+					<a href="https://www.linkedin.com/in/ryan-o-beirne-14a0a6177/" target="_blank" title="Facebook"><img src="../images/facebook.svg" alt="Facebook" width="35" height="35"></a>
+					<a href="https://www.linkedin.com/in/ryan-o-beirne-14a0a6177/" target="_blank" title="Instagram"><img src="../images/instagram.svg" alt="Instagram" width="35" height="35"></a>
+					<a href="https://www.linkedin.com/in/ryan-o-beirne-14a0a6177/" target="_blank" title="Youtube"><img src="../images/youtube.svg" alt="Youtube" width="35" height="35"></a>
+					<a href="https://www.linkedin.com/in/ryan-o-beirne-14a0a6177/" target="_blank" title="Contact"><img src="../images/mail.svg" alt="Contact email" width="35" height="35"></a>
+
+				</div>
+				<div class="col-md-4 text-center ml-auto" style="padding: 15px;">
+					<div class="customer-service">
+						<div class="customer-service">
+							Customer Service 1800 678 234
+						</div>
+						<div class="opening-times">
+							Monday to Friday 09:00 to 19:00 <br>
+                            Saturday 10:00 to 17:00
+                        </div>
+						</div>
+					</div>
+					<!--Copyright-->
+					<div class="col-12 text-shadow text-center">
+						&#169; 2021 Copyright: Daniel, Ryan and Alexandru | NCI
+				</div>
+			</div>
+	</footer>
         <!-- Javascript -->
         <script src="script.js"></script>
 
