@@ -12,14 +12,11 @@
         <link rel="stylesheet" href="../styles/style.css">
 
         <!-- Page title -->
-        <title>Tennis Mania</title>
-
-
+        <title>Reviews</title>
     </head>
     <body>
-	
-	        <!-- Navbar -->
-			<nav class="navbar navbar-expand-lg navbar-light">
+		<!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
               <a class="navbar-brand" href="../index.html"><img src="../images/logo.jpeg" height=auto width=auto alt="Tennis Mania Logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,13 +24,13 @@
               </button>
               <div class="collapse navbar-collapse" style="background-color:tomato;" id="navbarNav">
                 <ul class="navbar-nav m-lg-auto">
+                  <!-- Home-->
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a> 
                   </li>
+                  <!-- Shop -->
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Shop
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item" href="../shop/shop.html #rackets">Rackets</a></li>
                       <li><a class="dropdown-item" href="../shop/shop.html #tennisBalls">Tennis balls</a></li>
@@ -42,20 +39,18 @@
                       <li><a class="dropdown-item" href="../shop/shop.html #accessories">Accessories</a></li>
                     </ul>
                   </li>
+                  <!-- New -->
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      New
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="new/new.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">New</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item" href="../new/new.html #rafa">Rafa Edition</a></li>
                       <li><a class="dropdown-item" href="../new/new.html #wilson">Wilson Blade v8</a></li>
                       <li><a class="dropdown-item" href="../new/new.html #yonex">Yonex Mania</a></li>
                     </ul>
                   </li>
+                  <!-- Sale -->
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Sale
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="sale/sale.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sale</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item" href="../sale/sale.html #rackets">Rackets</a></li>
                       <li><a class="dropdown-item" href="../sale/sale.html #tennisBalls">Tennis balls</a></li>
@@ -64,48 +59,11 @@
                       <li><a class="dropdown-item" href="../sale/sale.html #accessories">Accessories</a></li>
                     </ul>
                   </li>
+                  <!-- Reviews -->
                   <li class="nav-item">
-                    <a class="nav-link" href="reviews.html">Reviews</a>
+                    <a class="nav-link" role="button" href="reviews.html">Reviews</a>
                   </li>
                 </ul>
-
-                <ul class="navbar-nav ml-auto">
-					<!-- This will put a link into the navigation bar,
-                     that will pop up a modal of shopping cart. This can be closed or link to shop page. -->
-					<li class="nav-item">
-						<a class="nav-link">
-							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-							<!-- Button trigger modal -->
-			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-			  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-			</svg>
-			</button>
-
-			<!-- Modal -->
-			<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-			  <div class="modal-dialog">
-				<div class="modal-content">
-				  <div class="modal-header">
-					<h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				  </div>
-				  <div class="modal-body">
-					<p>Your cart is currently empty. Click continue shopping to check out our latest products!</p>
-				  </div>
-				  <div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					<a href="../shop/shop.html" class="btn btn-primary" role="button">Continue Shopping</a>
-				  </div>
-				</div>
-			  </div>
-			</div>
-						</a>
-					</li>
-				</ul>
-              </div>
-            </div>
-          </nav>
-						  
         <!-- Javascript -->
         <script src="script.js"></script>
 
