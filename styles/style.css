@@ -6,8 +6,11 @@ form {
     border-radius: 1em;
   }
   
-.body {Â  
+.body {  
 background-image: url('../images/background.jpg');
  max-width: 500px;
   margin: auto;
+}
+.page-footer{
+  background-color:cyan; 
 }
