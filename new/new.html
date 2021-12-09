@@ -70,40 +70,19 @@
                     <a class="nav-link" role="button" href="../reviews/reviews.html">Reviews</a>
                   </li>
                 </ul>
+				<!-- Cart -->
+				<ul class="navbar-nav ml-auto">
+					<li class="cart">
+						<a class="nav-link" href="../cart/cart.html">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+								<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+								<span>0</span>
+							</button>
+						</a>
+					</li>
+				</ul>
 
-              <!-- Cart -->
-                <ul class="navbar-nav ml-auto">
-                <!-- This will put a link into the navigation bar,
-                that will pop up a modal of shopping cart. This can be closed or link to shop page. -->
-                  <li class="nav-item">
-                    <a class="nav-link">
-                      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                      <!-- Button trigger modal -->
-                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
-                      </button>
-
-                      <!-- Modal -->
-                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                            <p>Your cart is currently empty. Click continue shopping to check out our latest products!</p>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <a href="../shop/shop.html" class="btn btn-primary" role="button">Continue Shopping</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
               </div>
             </div>
           </nav>
@@ -318,34 +297,23 @@
 		<div class="container-fluid" style="background-color:cyan;" id="footer">
 			<div class="row top">
 				<div class="col-md-4 text-center mr-auto" style="padding: 15px;">
-					<ul class="list-unstyled footer-list">
-						<!-- Link for about us -->
-						<li>
-						  <a href="#footer">
-							About Us
-						  </a>
-						</li>
+				<ul class="list-unstyled footer-list">
 						<!-- Link to contact form -->
 						<li>
-						  <a href="#footer">
+						  <a href="../contact/contact.html #contact">
 							Contact
-						  </a>
-						</li>
-						<!-- Link for return policy -->
-						<li>
-						  <a href="#footer">
-							Return Policy
 						  </a>
 						</li>
 						<!-- Link for delivery information -->
 						<li>
-						  <a href="#footer">
+						  <a href="../contact/contact.html #delivery">
 							Delivery Information
 						  </a>
 						</li>
+						<!-- Link for return policy -->
 						<li>
-						  <a href="#footer">
-							Terms & Conditions
+						  <a href="../contact/contact.html #returns">
+							Return Policy
 						  </a>
 						</li>
 					</ul>
