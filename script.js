@@ -15,14 +15,116 @@ function myFunction() {
 }
 
 // Cart JS - Daniel Hahn 
-let carts = document.querySelectorAll('.btn btn-danger');
+let carts = document.querySelectorAll('.btn');
 
 //shop page
 let products = [
     {
         name: 'Babolat Pure Strike',
-        tag: '',
-        price: 100.00,
+        tag: 'Babolat Pure Strike 179 euro',
+        price: 179.00,
+        inCart: 0
+    },
+    {
+        name: 'HEAD Extreme Tour',
+        tag: 'HEAD Extreme Tour  180euro',
+        price: 180.00,
+        inCart: 0
+    },
+    {
+        name: 'HEAD Graphene 360+',
+        tag: 'HEAD Graphene 360+  150euro',
+        price: 150.00,
+        inCart: 0
+    },
+    {
+        name: 'Babolat Team Clay Can of 4 Balls',
+        tag: 'Babolat Team Can of 4 Balls 6.95 euro',
+        price: 6.95,
+        inCart: 0
+    },
+    {
+        name: 'Babolat Team Clay Can of 4 Balls',
+        tag: 'Babolat Team Clay Can of 4 Balls 5.85 euro',
+        price: 5.85,
+        inCart: 0
+    },
+    {
+        name: 'BIPACK of 4 Dunlop Austrtalion Open Balls',
+        tag: 'BIPACK OF 4 DUNLOP AUSTRALIAN OPEN BALLS 12.90 euro',
+        price: 12.90,
+        inCart: 0
+    },
+    {
+        name: 'ADIDAS ADIZERO UBERSONIC 4 CLAY COURT SHOES',
+        tag: 'ADIDAS ADIZERO UBERSONIC 4 CLAY COURT SHOES 109e',
+        price: 109.00,
+        inCart: 0
+    },
+    {
+        name: 'ADIDAS BARRICADE ALL COURT SHOES',
+        tag: 'ADIDAS BARRICADE ALL COURT SHOES 112e',
+        price: 112.00,
+        inCart: 0
+    },
+    {
+        name: 'ASICS COURT FF NEW YORK ALL COURT SHOES',
+        tag: 'ASICS COURT FF CORIC NEW YORK ALL COURT SHOES 144e',
+        price: 144.00,
+        inCart: 0
+    },
+    {
+        name: 'ADIDAS A. RDY VISOR',
+        tag: 'ADIDAS A. RDY VISOR 14.90e',
+        price: 14.90,
+        inCart: 0
+    },
+    {
+        name: 'ADIDAS ASK CREW MC SOCKS',
+        tag: 'ADIDAS ASK CREW MC SOCKS 12e',
+        price: 12.00,
+        inCart: 0
+    },
+    {
+        name: 'ADIDAS WOMEN COURT DRESS',
+        tag: 'ADIDAS DRESS 54.94e',
+        price: 54.94,
+        inCart: 0
+    },
+    {
+        name: '10 OVERGRIPS TOURNA GRIP ORIGINAL XL',
+        tag: '10 OVERGRIPS TOURNA GRIP ORIGINAL XL 18.90e',
+        price: 18.90,
+        inCart: 0
+    },
+    {
+        name: '30 BABOLAT VS ORIGINAL OVERGRIPS',
+        tag: '30 BABOLAT VS ORIGINAL OVERGRIPS 39.95e',
+        price: 39.95,
+        inCart: 0
+    },
+    {
+        name: '30 DUNLOP SUPER TAC OVERGRIPS',
+        tag: '30 DUNLOP SUPER TAC OVERGRIPS 69.95e',
+        price: 69.95,
+        inCart: 0
+    },
+    {
+        name: 'MINI RACQUET ULTRA 100 MINIONS',
+        tag: 'minion1',
+        price: 32.00,
+        inCart: 0
+    },
+    {
+        name: 'JUNIOR WILSON MINIONS 25 PACK',
+        tag: 'minion2',
+        price: 59.90,
+        inCart: 0
+    },
+    {
+        name: 'WILSON MINIONS BOX O FUN VIBRATION DAMPENERS',
+        tag: 'minion3',
+        price: 96.00,
         inCart: 0
     }
 ]
@@ -56,7 +158,7 @@ function cartNumbers(){
         localStorage.setItem('cartNumbers', 1);
         document.querySelector('.cart span').textContent=1;
     }
-    setItems(product);
+    setItems(products);
 }
 
 function setItems(product){
