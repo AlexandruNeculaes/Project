@@ -1,9 +1,16 @@
 form {
     margin: 0 auto;
     width: 600px;
-    padding: 1em;
+    padding: 10px;
     border: 1px solid #CCC;
     border-radius: 1em;
+	background-color:#89ceff;
+	background-image: linear-gradient(
+		315deg,
+		#89ceff 0%,
+		#dcb5ff 70%,
+		#ffc8f0 100%
+		);
   }
   
 .body {  
