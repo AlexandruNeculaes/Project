@@ -1,23 +1,32 @@
 form {
-    margin: 0 auto;
-    width: 600px;
-    padding: 10px;
-    border: 1px solid #CCC;
-    border-radius: 1em;
-	background-color:#89ceff;
-	background-image: linear-gradient(
-		315deg,
-		#89ceff 0%,
-		#dcb5ff 70%,
-		#ffc8f0 100%
-		);
-  }
-  
+  margin: 0 auto;
+  width: 600px;
+  padding: 10px;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+background-color:#89ceff;
+background-image: linear-gradient(
+  315deg,
+  #89ceff 0%,
+  #dcb5ff 70%,
+  #ffc8f0 100%
+  );
+}
+
 .body {
 background-image: url('../images/background.jpg');
- max-width: 500px;
-  margin: auto;
+max-width: 500px;
+margin: auto;
 }
 .page-footer{
-  background-color:cyan; 
+background-color:cyan; 
+}
+.modal-body{
+padding: 2px 16px;
+color:black;
+background-color: aqua;
+}
+.modal-header{
+color:black;
+
 }
