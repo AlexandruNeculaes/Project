@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -10,7 +10,10 @@
 
         <!-- Our CSS-->
         <link rel="stylesheet" href="../styles/style.css">
-		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
         <!-- Page title -->
         <title>Shop</title>
 
@@ -19,57 +22,73 @@
     <body>
 
 		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-light">
-			<div class="container">
-				<a class="navbar-brand" href="../index.html"><img src="../images/logo.jpeg" height=auto width=auto alt="Tennis Mania Logo"></a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<div id="navbar_wrapper">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container">
+				  <a class="navbar-brand" href="../index.html"><img src="../images/logo.jpeg" height=auto width=auto alt="Tennis Mania Logo"></a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" style="background-color:cyan;" id="navbarNav">
+				  </button>
+				  <div class="collapse navbar-collapse"  id="navbarNav">
 					<ul class="navbar-nav m-lg-auto">
-						<li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Home</a></li>
-						<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#rackets">Rackets</a></li>
-								<li><a class="dropdown-item" href="#tennisBalls">Tennis balls</a></li>
-								<li><a class="dropdown-item" href="#tennisShoes">Tennis shoes</a></li>
-								<li><a class="dropdown-item" href="#clothing">Clothing</a></li>
-								<li><a class="dropdown-item" href="#accessories">Accessories</a></li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">New</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="../new/new.html #rafa">Rafa Edition</a></li>
-								<li><a class="dropdown-item" href="../new/new.html #wilson">Wilson Blade v8</a></li>
-								<li><a class="dropdown-item" href="../new/new.html #yonex">Yonex Mania</a></li>
-								<li><a class="dropdown-item" href="../new/new.html #nikenew">New Nike Collection</a></li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sale</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="../sale/sale.html #headspecial">HEAD Special</a></li>
-								<li><a class="dropdown-item" href="../sale/sale.html #bagsspecial">BAGS Special</a></li>
-								<li><a class="dropdown-item" href="../sale/sale.html #selectedcas">Selected Clothes and Shoes</a></li>
-								<li><a class="dropdown-item" href="../sale/sale.html #biggest">Biggest discounts</a></li>
-								<li><a class="dropdown-item" href="../sale/sale.html #christmassale">Christmas Sale</a></li>
-							</ul>
-						</li>
-						<li class="nav-item"><a class="nav-link" href="../reviews/reviews.html">Reviews</a></li>
+					  <!-- Home-->
+					  <li class="nav-item">
+						<a class="nav-link active" id="Homeandreviews" aria-current="page" href="../index.html">Home</a>
+					  </li>
+					  <!-- Shop -->
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <li><a class="dropdown-item" href="shop.html #rackets">Rackets</a></li>
+						  <li><a class="dropdown-item" href="shop.html #tennisBalls">Tennis balls</a></li>
+						  <li><a class="dropdown-item" href="shop.html #tennisShoes">Tennis shoes</a></li>
+						  <li><a class="dropdown-item" href="shop.html #clothing">Clothing</a></li>
+						  <li><a class="dropdown-item" href="shop.html #accessories">Accessories</a></li>
+						</ul>
+					  </li>
+					  <!-- New -->
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">New</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <li><a class="dropdown-item" href="../new/new.html #rafa">Rafa Edition</a></li>
+						  <li><a class="dropdown-item" href="../new/new.html #wilson">Wilson Blade v8</a></li>
+						  <li><a class="dropdown-item" href="../new/new.html #yonex">Yonex Mania</a></li>
+						  <li><a class="dropdown-item" href="../new/new.html #nikenew">New Nike Collection</a></li>
+						</ul>
+					  </li>
+					  <!-- Sale -->
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sale</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <li><a class="dropdown-item" href="../sale/sale.html #headspecial">HEAD Special</a></li>
+						  <li><a class="dropdown-item" href="../sale/sale.html #bagsspecial">BAGS Special</a></li>
+						  <li><a class="dropdown-item" href="../sale/sale.html #selectedcas">Selected Clothes and Shoes</a></li>
+						  <li><a class="dropdown-item" href="../sale/sale.html #biggest">Biggest discounts</a></li>
+						  <li><a class="dropdown-item" href="../sale/sale.html #christmassale">Christmas Sale</a></li>
+						</ul>
+					  </li>
+					  <!-- Reviews -->
+					  <li class="nav-item">
+						<a class="nav-link" role="button" id="Homeandreviews" href="../reviews/reviews.html">Reviews</a>
+					  </li>
 					</ul>
-					<!-- Cart -->
-					<ul class="navbar-nav ml-auto">
-						<li class="cart">
-						  <a class="nav-link" href="../cart/cart.html">
-							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-							  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
-							  <span>0</span>
-							</button>
-						  </a>
-						</li>
-					  </ul>
-            	</div>
-        	</div>
-    	</nav>
+
+		 <!-- Cart -->
+						<ul class="navbar-nav ml-auto">
+							<li class="cart">
+								<a class="nav-link"  href="../cart/cart.html">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+									<button type="button" class="btn btn-primary cartbutton" data-bs-toggle="modal" id="cartnavbar" data-bs-target="#staticBackdrop"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+										<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+										<span>0</span>
+									</button>
+								</a>
+							</li>
+						</ul>
+				  </div>
+				</div>
+			  </nav>
+			</div>
 
 		<div class="container">
 			<div class="card bg-dark text-white">
@@ -92,9 +111,7 @@
 						<div class="card-body">
 							<h5 class="card-title">Babolat Pure Strike</h5>
 							<p class="card-text">€179.00</p>
-							<a class="add-cart cart1" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
@@ -104,9 +121,7 @@
 						<div class="card-body">
 							<h5 class="card-title">HEAD Extreme Tour</h5>
 							<p class="card-text">€180.00</p>
-							<a class="add-cart cart2" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
@@ -116,9 +131,7 @@
 						<div class="card-body">
 							<h5 class="card-title">HEAD Graphene 360+</h5>
 							<p class="card-text">€150.00</p>
-							<a class="add-cart cart3" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
@@ -138,9 +151,7 @@
 						<div class="card-body">
 							<h5 class="card-title">Babolat Team Can of 4 Balls</h5>
 							<p class="card-text">€6.95</p>
-							<a class="add-cart cart4" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
@@ -150,9 +161,7 @@
 						<div class="card-body">
 							<h5 class="card-title">Babolat Team Clay Can of 4 Balls</h5>
 							<p class="card-text">€5.85</p>
-							<a class="add-cart cart5" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
@@ -162,9 +171,7 @@
 						<div class="card-body">
 							<h5 class="card-title">BIPACK of 4 Dunlop Austrtalion Open Balls</h5>
 							<p class="card-text">€12.90</p>
-							<a class="add-cart cart6" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
@@ -184,9 +191,7 @@
 						<div class="card-body">
 							<h5 class="card-title">ADIDAS ADIZERO UBERSONIC 4 CLAY COURT SHOES</h5>
 							<p class="card-text">€109.00</p>
-							<a class="add-cart cart7" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
@@ -196,9 +201,7 @@
 						<div class="card-body">
 							<h5 class="card-title">ADIDAS BARRICADE ALL COURT SHOES</h5>
 							<p class="card-text">€122.00</p>
-							<a class="add-cart cart8" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
@@ -208,9 +211,7 @@
 						<div class="card-body">
 							<h5 class="card-title">ASICS COURT FF NEW YORK ALL COURT SHOES</h5>
 							<p class="card-text">€144.00</p>
-							<a class="add-cart cart9" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
@@ -230,9 +231,7 @@
 						<div class="card-body">
 							<h5 class="card-title">ADIDAS A. RDY VISOR </h5>
 							<p class="card-text">€14.90</p>
-							<a class="add-cart cart10" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
@@ -242,9 +241,7 @@
 						<div class="card-body">
 							<h5 class="card-title">ADIDAS ASK CREW MC SOCKS</h5>
 							<p class="card-text">€12.00</p>
-							<a class="add-cart cart11" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
@@ -254,9 +251,7 @@
 						<div class="card-body">
 							<h5 class="card-title">ADIDAS WOMEN COURT DRESS</h5>
 							<p class="card-text">€54.94</p>
-							<a class="add-cart cart12" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
@@ -276,9 +271,7 @@
 						<div class="card-body">
 							<h5 class="card-title">10 OVERGRIPS TOURNA GRIP ORIGINAL XL</h5>
 							<p class="card-text">€18.90</p>
-							<a class="add-cart cart13" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
@@ -288,9 +281,7 @@
 						<div class="card-body">
 							<h5 class="card-title">30 BABOLAT VS ORIGINAL OVERGRIPS</h5>
 							<p class="card-text">€39.95</p>
-							<a class="add-cart cart14" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
@@ -300,9 +291,7 @@
 						<div class="card-body">
 							<h5 class="card-title">30 DUNLOP SUPER TAC OVERGRIPS</h5>
 							<p class="card-text">€69.95</p>
-							<a class="add-cart cart15" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
@@ -322,9 +311,7 @@
 						<div class="card-body">
 							<h5 class="card-title">MINI RACQUET ULTRA 100 MINIONS</h5>
 							<p class="card-text">€32.00</p>
-							<a class="add-cart cart16" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
@@ -334,9 +321,7 @@
 						<div class="card-body">
 							<h5 class="card-title">JUNIOR WILSON MINIONS 25 PACK</h5>
 							<p class="card-text">€59.90</p>
-							<a class="add-cart cart17" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
@@ -346,29 +331,42 @@
 						<div class="card-body">
 							<h5 class="card-title">WILSON MINIONS BOX O FUN VIBRATION DAMPENERS</h5>
 							<p class="card-text">€96.00</p>
-							<a class="add-cart cart18" href="#">
-								<button type="button" class="btn btn-danger">Add to cart</button>
-							</a>
+							<button type="button" class="btn btn-danger">Add to cart</button>
 						</div>
 					</div>
 				</div>
 			</div>
-
+			</div>
+	<br>
+	<br>
 			<!-- Footer -->
 			<footer class="page-footer">
-				<div class="container-fluid" style="background-color:cyan;" id="footer">
+				<div class="container-fluid",  id="footer">
 					<div class="row top">
 						<div class="col-md-4 text-center mr-auto" style="padding: 15px;">
 							<ul class="list-unstyled footer-list">
-								<!-- Links -->
-								<li><a href="#footer">About Us</a></li>
-								<li><a href="#footer">Contact</a></li>
-								<li><a href="#footer">Return Policy</a></li>
-								<li><a href="#footer">Delivery Information</a></li>
-								<li><a href="#footer">Terms & Conditions</a></li>
+								<!-- Link to contact form -->
+								<li>
+								  <a href="../info/info.html #contact" id="footercontact">
+									Contact
+								  </a>
+								</li>
+								<!-- Link for delivery information -->
+								<li>
+								  <a href="../info/info.html #delivery" id="footercontact">
+									Delivery Information
+								  </a>
+								</li>
+								<!-- Link for return policy -->
+								<li>
+								  <a href="../info/info.html #returns" id="footercontact">
+									Return Policy
+								  </a>
+								</li>
 							</ul>
 						</div>
 						<div class="col-md-4 text-center bottom" style="padding: 35px;">
+
 							<a href="https://www.linkedin.com/in/ryan-o-beirne-14a0a6177/" target="_blank" title="Facebook"><img src="../images/facebook.svg" alt="Facebook" width="35" height="35"></a>
 							<a href="https://www.linkedin.com/in/alexandru-neculaes-913917114/" target="_blank" title="Instagram"><img src="../images/instagram.svg" alt="Instagram" width="35" height="35"></a>
 							<a href="https://www.linkedin.com/in/daniel-hahn21/" target="_blank" title="Youtube"><img src="../images/youtube.svg" alt="Youtube" width="35" height="35"></a>
@@ -377,21 +375,26 @@
 						</div>
 						<div class="col-md-4 text-center ml-auto" style="padding: 15px;">
 							<div class="customer-service">
-								<div class="customer-service">Customer Service 1800 678 234</div>
-								<div class="opening-times">Monday to Friday 09:00 to 19:00 <br>Saturday 10:00 to 17:00</div>
+								<div class="customer-service">
+									Customer Service 1800 678 234
+								</div>
+								<div class="opening-times">
+									Monday to Friday 09:00 to 19:00 <br>
+									Saturday 10:00 to 17:00
+								</div>
+								</div>
 							</div>
+							<!--Copyright-->
+							<div class="col-12 text-shadow text-center">
+								&#169; 2021 Copyright: Daniel, Ryan and Alexandru | NCI
 						</div>
-						<!--Copyright-->
-						<div class="col-12 text-shadow text-center">&#169; 2021 Copyright: Daniel, Ryan and Alexandru | NCI</div>
 					</div>
-				</div>
 			</footer>
 
         <!-- Javascript -->
-        
+        <script src="../script.js"></script>
 
         <!-- Bootstrap Javascript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-		<script src="../script.js"></script>
-	</body>
+    </body>
 </html>

@@ -11,391 +11,215 @@
         <!-- Our CSS-->
         <link rel="stylesheet" href="../styles/style.css">
 
-		<!-- Javascript (load in background)-->
-		<script src="script.js" async></script>
-
         <!-- Page title -->
-        <title>Sale Page</title>
-
-
+        <title>Tennis Mania</title>
     </head>
     <body>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div id="navbar_wrapper">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
               <a class="navbar-brand" href="../index.html"><img src="../images/logo.jpeg" height=auto width=auto alt="Tennis Mania Logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" style="background-color:cyan;" id="navbarNav">
-                <ul class="navbar-nav m-lg-auto">
-                  <!-- Home-->
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                  </li>
-                  <!-- Shop -->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="shop/shop.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="../shop/shop.html #rackets">Rackets</a></li>
-                      <li><a class="dropdown-item" href="../shop/shop.html #tennisBalls">Tennis balls</a></li>
-                      <li><a class="dropdown-item" href="../shop/shop.html #tennisShoes">Tennis shoes</a></li>
-                      <li><a class="dropdown-item" href="../shop/shop.html #clothing">Clothing</a></li>
-                      <li><a class="dropdown-item" href="../shop/shop.html #accessories">Accessories</a></li>
-                    </ul>
-                  </li>
-                  <!-- New -->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="new/new.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">New</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="../new/new.html #rafa">Rafa Edition</a></li>
-                      <li><a class="dropdown-item" href="../new/new.html #wilson">Wilson Blade v8</a></li>
-                      <li><a class="dropdown-item" href="../new/new.html #yonex">Yonex Mania</a></li>
-					  <li><a class="dropdown-item" href="../new/new.html #nikenew">New Nike Collection</a></li>
-                    </ul>
-                  </li>
-                  <!-- Sale -->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="sale.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sale</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li><a class="dropdown-item" href="sale/sale.html #headspecial">HEAD Special</a></li>
-						<li><a class="dropdown-item" href="sale/sale.html #bagsspecial">BAGS Special</a></li>
-						<li><a class="dropdown-item" href="sale/sale.html #selectedcas">Selected Clothes and Shoes</a></li>
-						<li><a class="dropdown-item" href="sale/sale.html #biggest">Biggest discounts</a></li>
-						<li><a class="dropdown-item" href="sale/sale.html #christmassale">Christmas Sale</a></li>
-                    </ul>
-                  </li>
-                  <!-- Reviews -->
-                  <li class="nav-item">
-                    <a class="nav-link" role="button" href="../reviews/reviews.html">Reviews</a>
+              <div class="collapse navbar-collapse"  id="navbarNav">
+              <ul class="navbar-nav m-lg-auto">
+                <!-- Home-->
+                <li class="nav-item">
+                <a class="nav-link active" id="Homeandreviews" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <!-- Shop -->
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../shop/shop.html #rackets">Rackets</a></li>
+                  <li><a class="dropdown-item" href="../shop/shop.html #tennisBalls">Tennis balls</a></li>
+                  <li><a class="dropdown-item" href="../shop/shop.html #tennisShoes">Tennis shoes</a></li>
+                  <li><a class="dropdown-item" href="../shop/shop.html #clothing">Clothing</a></li>
+                  <li><a class="dropdown-item" href="../shop/shop.html #accessories">Accessories</a></li>
+                </ul>
+                </li>
+                <!-- New -->
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">New</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../new/new.html #rafa">Rafa Edition</a></li>
+                  <li><a class="dropdown-item" href="../new/new.html #wilson">Wilson Blade v8</a></li>
+                  <li><a class="dropdown-item" href="../new/new.html #yonex">Yonex Mania</a></li>
+                  <li><a class="dropdown-item" href="../new/new.html #nikenew">New Nike Collection</a></li>
+                </ul>
+                </li>
+                <!-- Sale -->
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sale</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../sale/sale.html #headspecial">HEAD Special</a></li>
+                  <li><a class="dropdown-item" href="../sale/sale.html #bagsspecial">BAGS Special</a></li>
+                  <li><a class="dropdown-item" href="../sale/sale.html #selectedcas">Selected Clothes and Shoes</a></li>
+                  <li><a class="dropdown-item" href="../sale/sale.html #biggest">Biggest discounts</a></li>
+                  <li><a class="dropdown-item" href="../sale/sale.html #christmassale">Christmas Sale</a></li>
+                </ul>
+                </li>
+                <!-- Reviews -->
+                <li class="nav-item">
+                <a class="nav-link" role="button" id="Homeandreviews" href="reviews.html">Reviews</a>
+                </li>
+              </ul>
+
+         <!-- Cart -->
+                <ul class="navbar-nav ml-auto">
+                  <li class="cart">
+                    <a class="nav-link"  href="../cart/cart.html">
+                      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                      <button type="button" class="btn btn-primary cartbutton" data-bs-toggle="modal" id="cartnavbar" data-bs-target="#staticBackdrop"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+                        <span>0</span>
+                      </button>
+                    </a>
                   </li>
                 </ul>
-
-				<!-- Cart -->
-				<ul class="navbar-nav ml-auto">
-					<li class="cart">
-						<a class="nav-link" href="../cart/cart.html">
-							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-								<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
-								<span>0</span>
-							</button>
-						</a>
-					</li>
-				</ul>
               </div>
             </div>
-          </nav>
-          <div class="container">
-			<div class="card bg-dark text-white">
-				<img src="../images/Sale-banner-christmas.jpg" class="card-img" alt="...">
-				<div class="card-img-overlay"></div>
-			</div>
+            </nav>
+          </div>
 
-		
-			<!-- HEAD Special-->
-			<nav class="navbar navbar-light bg-light" id="headspecial">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#"><img src="../images/Head card/head-vector-logo.png" alt="" width="50" height="50" class="d-inline-block align-text-center">HEAD Special</a>
-				</div>
-			</nav>
-			<div class="row row-cols-1 row-cols-md-3 g-4">
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Head card/HEAD PERFORMANCE CILIC SHORTS 48e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">HEAD PERFORMANCE CILIC SHORTS</h5>
-							<p><s>60 Euro</s></p>
-							<p class="card-text">48 Euro</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-						<div class="card-footer">
-						<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Head card/HEAD PERFORMANCE CILIC T-SHIRT 48e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">HEAD PERFORMANCE CILIC T-SHIRT</h5>
-							<p><s>80 Euro</s></p>
-							<p class="card-text">48 Euro</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Head card/WOMEN'S HEAD RALLY SWEATER 36e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">WOMEN'S HEAD RALLY SWEATER</h5>
-							<p><s>72 Euro</s></p>
-							<p class="card-text">36 Euro</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
-				</div>
-			</div>
+	<br>
+	<br>
+	<br>
+	<div class="container" id="contact">
+   <div class="card bg-dark text-light">
+              <img src="../images/contactimg.jfif" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h4 class="card-title">Phone Number:</h4>
+                <h3 class="card-text">1800 678 234</h3>
+				<h4 class="card-title">Email:</h4>
+                <h3 class="card-text">tennis.mania@info.ie</h3>
+				<h4 class="card-title">Address:</h4>
+                <h3 class="card-text">Tennis Mania HQ, Grafton Street, Dublin</h3>
+              </div>
+            </div>
+</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="container" id="delivery">
+	<h4>Typically asked Delivery Questions</h4>
+	<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Do you deliver to Northern Ireland?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Yes, we deliver to Northern Ireland.</strong> We currently deliver accross Ireland and Northern Ireland. We currently don't deliver outside of Ireland but hope to expand to the UK in 2022.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        How long will delivery take?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Typically 3-5 working days.</strong> We always aim to deliver as soon as possible and will always deliver within 5 working days or we will refund your delivery fee!
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        What does delivery cost?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>FREE on orders over €80. €4 otherwise</strong> We currently offer free delivery on all orders €80. We also offer delivery for a reasonable €4 on all other orders.
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+<div class="container" id="returns">
+<div class="card">
+  <div class="card-header">
+    Return Policy
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">At Tennis Mania</h5>
+    <p class="card-text">We understand that sometimes things don't go to plan. If you wish to make a return of refund just get in contact and we'd love to help.</p>
+    <a href="#contact" class="btn btn-primary">Find contact</a>
+  </div>
+</div>
+</div>
 
-			<!-- BAGS Special-->
-			<nav class="navbar navbar-light bg-light" id="bagsspecial">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#"><img src="../images/Bags/bag-logo.jpg" alt="" width="50" height="50" class="d-inline-block align-text-center">BAGS Special</a>
-				</div>
-			</nav>
-			<div class="row row-cols-1 row-cols-md-3 g-4">
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Bags/HEAD TOUR TEAM 12R MONSTERCOMBI EXCLUSIVE TENNIS BAG 59e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">HEAD TOUR TEAM 12R MONSTERCOMBI EXCLUSIVE TENNIS BAG</h5>
-							<p><s>110 Euro</s></p>
-							<p class="card-text">59 Euro</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Bags/BABOLAT PURE STRIKE 12 TENNIS BAG 77e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">BABOLAT PURE STRIKE 12 TENNIS BAG</h5>
-							<p><s>130 Euro</s></p>
-							<p class="card-text">77 Euro</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Bags/BABOLAT PURE AERO RAFA BACKPACK 80.95e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">BABOLAT PURE AERO RAFA BACKPACK</h5>
-							<p><s>120 Euro</s></p>
-							<p class="card-text">80.95 Euro</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
-				</div>
-			</div>
 
-			<!-- Selected Clothes and Shoes-->
-			<nav class="navbar navbar-light bg-light" id="selectedcas">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#"><img src="../images/clothing-small-logo.jpg" alt="" width="50" height="50" class="d-inline-block align-text-center">Selected Clothes and Shoes</a>
-				</div>
-			</nav>
-			<div class="row row-cols-1 row-cols-md-3 g-4">
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Shoes/LACOSTE AG-LT 21 ULTRA ALL COURT SHOES 89e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">LACOSTE AG-LT 21 ULTRA ALL COURT SHOES</h5>
-							<p><s>180 Euro</s></p>
-							<p class="card-text">89 Euro</p>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Carousel Christmas/EA7 TRAIN CORE ID DOWN JACKET 109.90e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">EA7 TRAIN CORE ID DOWN JACKET</h5>
-							<p><s>200 Euro</s></p>
-							<p class="card-text">109.90 Euro</p>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Last Season/WOMEN'S BIDI BADU GENE TECH JACKET 51.96e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">WOMEN'S BIDI BADU GENE TECH JACKET</h5>
-							<p><s>80 Euro</s></p>
-							<p class="card-text">51.96 Euro</p>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
-				</div>
-			</div>
+<br>
+<br>
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container-fluid",  id="footer">
+        <div class="row top">
+          <div class="col-md-4 text-center mr-auto" style="padding: 15px;">
+            <ul class="list-unstyled footer-list">
+              <!-- Link to contact form -->
+              <li>
+                <a href="../info/info.html #contact" id="footercontact">
+                Contact
+                </a>
+              </li>
+              <!-- Link for delivery information -->
+              <li>
+                <a href="../info/info.html #delivery" id="footercontact">
+                Delivery Information
+                </a>
+              </li>
+              <!-- Link for return policy -->
+              <li>
+                <a href="../info/info.html #returns" id="footercontact">
+                Return Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center bottom" style="padding: 35px;">
 
-			<!-- Biggest discounts-->
-			<nav class="navbar navbar-light bg-light" id="biggest">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#"><img src="../images/Last Season/discount logo.jpg" width="50" height="50" class="d-inline-block align-text-center">Biggest discounts</a>
-				</div>
-			</nav>
-			<div class="row row-cols-1 row-cols-md-3 g-4">
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Last Season/BABOLAT PROPULSE FURY ALL COURT SHOES 89e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">BABOLAT PROPULSE FURY ALL COURT SHOES</h5>
-							<p><s>180 Euro</s></p>
-							<p class="card-text">59 Euro</p>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Last Season/EA7 TRAINING SPORTY VISIBILITY HOODIE 69e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">EA7 TRAINING SPORTY VISIBILITY HOODIE</h5>
-							<p><s>195 Euro</s></p>
-							<p class="card-text">69 Euro</p>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Last Season/ADIDAS PRIMEBLUE PARIS JACKET 47.90e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">ADIDAS PRIMEBLUE PARIS JACKET</h5>
-							<p><s>195 Euro</s></p>
-							<p class="card-text">47.90 Euro</p>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Christmas Sale-->
-			<nav class="navbar navbar-light bg-light" id="christmassale">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#"><img src="../images/Carousel Christmas/logo sale christmas.jpg" alt="" width="50" height="50" class="d-inline-block align-text-center">Christmas Sale</a>
-				</div>
-			</nav>
-			<div class="row row-cols-1 row-cols-md-3 g-4">
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Carousel Christmas/ADIDAS GREENPADEL PADEL RACQUET 168e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">ADIDAS GREENPADEL PADEL RACQUET</h5>
-							<p><s>230 Euro</s></p>
-							<p class="card-text">168 Euro</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Carousel Christmas/JUNIOR LACOSTE RG BALL KID CAP 35e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">JUNIOR LACOSTE RG BALL KID CAP</h5>
-							<p><s>45 Euro</s></p>
-							<p class="card-text">35 Euro</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Carousel Christmas/JAUQ PREMIUM JOKARI KIT 43.96e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">JAUQ PREMIUM JOKARI KIT</h5>
-							<p><s>80 Euro</s></p>
-							<p class="card-text">43.96 Euro</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-						<br>
-						<div class="card-footer">
-							<small class="text-muted">Last updated 3 mins ago</small>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+            <a href="https://www.linkedin.com/in/ryan-o-beirne-14a0a6177/" target="_blank" title="Facebook"><img src="../images/facebook.svg" alt="Facebook" width="35" height="35"></a>
+            <a href="https://www.linkedin.com/in/alexandru-neculaes-913917114/" target="_blank" title="Instagram"><img src="../images/instagram.svg" alt="Instagram" width="35" height="35"></a>
+            <a href="https://www.linkedin.com/in/daniel-hahn21/" target="_blank" title="Youtube"><img src="../images/youtube.svg" alt="Youtube" width="35" height="35"></a>
+            <a href="https://github.com/AlexandruNeculaes/Project.git" target="_blank" title="Contact"><img src="../images/mail.svg" alt="Contact email" width="35" height="35"></a>
 
-		<!-- Footer -->
-			<footer class="page-footer">
-		<div class="container-fluid" style="background-color:cyan;" id="footer">
-			<div class="row top">
-				<div class="col-md-4 text-center mr-auto" style="padding: 15px;">
-				<ul class="list-unstyled footer-list">
-						<!-- Link to contact form -->
-						<li>
-						  <a href="../info/info.html #contact">
-							Contact
-						  </a>
-						</li>
-						<!-- Link for delivery information -->
-						<li>
-						  <a href="../info/info.html #delivery">
-							Delivery Information
-						  </a>
-						</li>
-						<!-- Link for return policy -->
-						<li>
-						  <a href="../info/info.html #returns">
-							Return Policy
-						  </a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-4 text-center bottom" style="padding: 35px;">
-
-					<a href="https://www.linkedin.com/in/ryan-o-beirne-14a0a6177/" target="_blank" title="Facebook"><img src="../images/facebook.svg" alt="Facebook" width="35" height="35"></a>
-					<a href="https://www.linkedin.com/in/alexandru-neculaes-913917114/" target="_blank" title="Instagram"><img src="../images/instagram.svg" alt="Instagram" width="35" height="35"></a>
-					<a href="https://www.linkedin.com/in/daniel-hahn21/" target="_blank" title="Youtube"><img src="../images/youtube.svg" alt="Youtube" width="35" height="35"></a>
-					<a href="https://github.com/AlexandruNeculaes/Project.git" target="_blank" title="Contact"><img src="../images/mail.svg" alt="Contact email" width="35" height="35"></a>
-
-				</div>
-				<div class="col-md-4 text-center ml-auto" style="padding: 15px;">
-					<div class="customer-service">
-						<div class="customer-service">
-							Customer Service 1800 678 234
-						</div>
-						<div class="opening-times">
-							Monday to Friday 09:00 to 19:00 <br>
-                            Saturday 10:00 to 17:00
-                        </div>
-						</div>
-					</div>
-					<!--Copyright-->
-					<div class="col-12 text-shadow text-center">
-						&#169; 2021 Copyright: Daniel, Ryan and Alexandru | NCI
-				</div>
-			</div>
-	</footer>
+          </div>
+          <div class="col-md-4 text-center ml-auto" style="padding: 15px;">
+            <div class="customer-service">
+              <div class="customer-service">
+                Customer Service 1800 678 234
+              </div>
+              <div class="opening-times">
+                Monday to Friday 09:00 to 19:00 <br>
+                Saturday 10:00 to 17:00
+              </div>
+              </div>
+            </div>
+            <!--Copyright-->
+            <div class="col-12 text-shadow text-center">
+              &#169; 2021 Copyright: Daniel, Ryan and Alexandru | NCI
+          </div>
+        </div>
+    </footer>
         <!-- Javascript -->
-        <script src="script.js"></script>
+        <script src="../script.js"></script>
 
         <!-- Bootstrap Javascript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

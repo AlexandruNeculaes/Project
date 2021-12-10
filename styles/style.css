@@ -132,3 +132,107 @@ color:black;
   display: flex;
   justify-content: flex-end;
 }
+#form {
+  margin: 0 auto;
+  width: 600px;
+  padding: 10px;
+  
+  
+background-color:#89ceff;
+background-image: linear-gradient(
+  315deg,
+  #89ceff 0%,
+  #dcb5ff 70%,
+  #ffc8f0 100%
+  ); 
+ 
+}
+
+.body {
+max-width: 500px;
+margin: auto;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.page-footer{
+background-color: rgb(108, 236, 103);
+color:black;
+}
+#footercontact{
+  color:black;
+}
+.modal-content{
+  padding: 20px 20px 20px 20px;
+  -webkit-animation-name: modal-animation;
+  -webkit-animation-duration: 0.5s;
+  animation-name: modal-animation;
+  animation-duration: 0.5s; 
+ 
+}
+
+.modal-title{
+font-size: 170%;
+
+
+}
+.modal-body{
+padding: 2px 16px;
+color:black;
+background-color: gainsboro;
+font-size: 150%;
+font-style: italic;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.modal-header{
+color:black;
+background-color: cyan;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 150%; 
+}
+#navbarNav{
+  height: 150px;
+
+  
+}
+#navbarDropdown{
+  color:rgb(33, 177, 33);
+}
+.nav-item{
+  color:rgb(33, 177, 33);
+  padding: 20px;
+}
+#Homeandreviews{
+  color:rgb(33, 177, 33);
+}
+#cartnavbar{
+  background-color:rgb(247, 211, 7);
+  color:black;
+}
+.navbar-nav{
+  font-size:x-large;
+  
+}
+.dropdown-item{
+  font-size:x-large;
+ background-color:floralwhite;
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  
+}
+.cartbutton{
+  padding: 20px;
+  
+}
+.cart{
+  padding: 20px;
+}
+li a:hover {
+  background-color:rgb(247, 211, 7);;
+}
