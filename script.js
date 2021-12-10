@@ -1,4 +1,4 @@
-var myModal = document.getElementById('myModal')
+/*var myModal = document.getElementById('myModal')
 var myInput = document.getElementById('myInput')
 
 myModal.addEventListener('shown.bs.modal', function () {
@@ -18,10 +18,10 @@ function myFunction() {
 
     x.style.display = "none";
 
-}
+} */
 
 // Cart JS - Daniel Hahn 
-let carts = document.querySelectorAll('.btn');
+let carts = document.querySelectorAll('.add-cart');
 
 //shop page
 let products = [
@@ -132,12 +132,42 @@ let products = [
         tag: 'minion3',
         price: 96.00,
         inCart: 0
-    }
-]
-
+    },
+/*
 //sale page
+    {
+        name: 'WILSON MINIONS BOX O FUN VIBRATION DAMPENERS',
+        tag: 'minion3',
+        price: 96.00,
+        inCart: 0
+    },
+    {
+        name: 'WILSON MINIONS BOX O FUN VIBRATION DAMPENERS',
+        tag: 'minion3',
+        price: 96.00,
+        inCart: 0
+    },
+    {
+        name: 'WILSON MINIONS BOX O FUN VIBRATION DAMPENERS',
+        tag: 'minion3',
+        price: 96.00,
+        inCart: 0
+    },
+    {
+        name: 'WILSON MINIONS BOX O FUN VIBRATION DAMPENERS',
+        tag: 'minion3',
+        price: 96.00,
+        inCart: 0
+    },
+    {
+        name: 'WILSON MINIONS BOX O FUN VIBRATION DAMPENERS',
+        tag: 'minion3',
+        price: 96.00,
+        inCart: 0
+    }, 
 
-//new page
+//new page */
+]
 
 for(let i=0; i<carts.length; i++){
     carts[i].addEventListener('click', () => {
@@ -153,7 +183,7 @@ function onLoadCartNumbers(){
     }
 }
 
-function cartNumbers(){
+function cartNumbers(product){
     let productNumbers = localStorage.getItem('cartNumbers');
     productNumbers = parseInt(productNumbers);
     if(productNumbers){
@@ -164,7 +194,7 @@ function cartNumbers(){
         localStorage.setItem('cartNumbers', 1);
         document.querySelector('.cart span').textContent=1;
     }
-    setItems(products);
+    setItems(product);
 }
 
 function setItems(product){
@@ -185,8 +215,7 @@ function setItems(product){
             [product.tag]: product
         }
     }
-    localStorage.setItem("productsInCart", JSON.stringify
-    (cartItems));
+    localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
 
 function totalCost(product){
@@ -239,4 +268,4 @@ function displayCart(){
     }
 }
 
-onLoadCartNumbers();
+onLoadCartNumbers(); 
