@@ -1,9 +1,10 @@
-/*var myModal = document.getElementById('myModal')
+var myModal = document.getElementById('myModal')
 var myInput = document.getElementById('myInput')
 
 myModal.addEventListener('shown.bs.modal', function () {
   myInput.focus()
 })
+
 function myFunction() {
 
     event.preventDefault();
@@ -18,8 +19,8 @@ function myFunction() {
 
     x.style.display = "none";
 
-} */
-
+} 
+/*
 // Cart JS - Daniel Hahn 
 let carts = document.querySelectorAll('.add-cart');
 
@@ -166,8 +167,8 @@ let products = [
         inCart: 0
     }, 
 
-//new page */
-]
+
+
 
 for(let i=0; i<carts.length; i++){
     carts[i].addEventListener('click', () => {
@@ -269,3 +270,4 @@ function displayCart(){
 }
 
 onLoadCartNumbers(); 
+//new page */

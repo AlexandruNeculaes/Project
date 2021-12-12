@@ -18,20 +18,20 @@ background-image: url('../images/background.jpg');
 max-width: 500px;
 margin: auto;
 }
+
 .page-footer{
 background-color:cyan; 
 }
+
 .modal-body{
 padding: 2px 16px;
 color:black;
 background-color: aqua;
 }
+
 .modal-header{
 color:black;
-
 }
-
-/* Cart Daniel Hahn */
 
 #cart-container {
   overflow-x: auto;
@@ -49,7 +49,7 @@ color:black;
 }
 
 #cart-container table thead td {
-  background: cyan;
+  background: rgb(108, 236, 103);;
   color: #fff;
   border: none;
   padding: 6px 0;
@@ -93,7 +93,7 @@ color:black;
 
 #cart-bottom .discount h5,
 #cart-bottom .total h5 {
-  background: cyan;
+  background: rgb(108, 236, 103);;
   color: #fff;
   border: none;
   padding: 6px 12px;
@@ -108,6 +108,7 @@ color:black;
 #cart-bottom .discount input {
   height: 44px;
 }
+
 #cart-bottom .discount input,
 #cart-bottom .discount button {
   margin: 0 0 20px 12px;
@@ -132,6 +133,7 @@ color:black;
   display: flex;
   justify-content: flex-end;
 }
+
 #form {
   margin: 0 auto;
   width: 600px;
@@ -158,9 +160,11 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 background-color: rgb(108, 236, 103);
 color:black;
 }
+
 #footercontact{
   color:black;
 }
+
 .modal-content{
   padding: 20px 20px 20px 20px;
   -webkit-animation-name: modal-animation;
@@ -172,9 +176,8 @@ color:black;
 
 .modal-title{
 font-size: 170%;
-
-
 }
+
 .modal-body{
 padding: 2px 16px;
 color:black;
@@ -196,43 +199,56 @@ background-color: cyan;
   border: 1px solid #888;
   width: 150%; 
 }
+
 #navbarNav{
   height: 150px;
 
   
 }
+
 #navbarDropdown{
   color:rgb(33, 177, 33);
 }
+
 .nav-item{
   color:rgb(33, 177, 33);
   padding: 20px;
 }
+
 #Homeandreviews{
   color:rgb(33, 177, 33);
 }
+
 #cartnavbar{
   background-color:rgb(247, 211, 7);
   color:black;
 }
+
 .navbar-nav{
   font-size:x-large;
   
 }
+
 .dropdown-item{
   font-size:x-large;
  background-color:floralwhite;
  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-  
 }
+
 .cartbutton{
   padding: 20px;
-  
 }
+
 .cart{
   padding: 20px;
 }
+
 li a:hover {
-  background-color:rgb(247, 211, 7);;
+background-color:rgb(247, 211, 7);;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(33, 177, 33);
+  }
 }
