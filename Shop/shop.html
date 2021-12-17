@@ -10,327 +10,245 @@
 
         <!-- Our CSS-->
         <link rel="stylesheet" href="../styles/style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+		<!-- Icons -->
+		<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
         <!-- Page title -->
         <title>Shop</title>
     </head>
     <body>
-
-		<!-- Navbar -->
-		<div id="navbar_wrapper">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="container">
-				  <a class="navbar-brand" href="../index.html"><img src="../images/logo.jpeg" height=auto width=auto alt="Tennis Mania Logo"></a>
-				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				  </button>
-				  <div class="collapse navbar-collapse"  id="navbarNav">
-					<ul class="navbar-nav m-lg-auto">
-					  <!-- Home-->
-					  <li class="nav-item">
-						<a class="nav-link active" id="Homeandreviews" aria-current="page" href="../index.html">Home</a>
-					  </li>
-					  <!-- Shop -->
-					  <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <li><a class="dropdown-item" href="shop.html #rackets">Rackets</a></li>
-						  <li><a class="dropdown-item" href="shop.html #tennisBalls">Tennis balls</a></li>
-						  <li><a class="dropdown-item" href="shop.html #tennisShoes">Tennis shoes</a></li>
-						  <li><a class="dropdown-item" href="shop.html #clothing">Clothing</a></li>
-						  <li><a class="dropdown-item" href="shop.html #accessories">Accessories</a></li>
-						</ul>
-					  </li>
-					  <!-- New -->
-					  <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">New</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <li><a class="dropdown-item" href="../new/new.html #rafa">Rafa Edition</a></li>
-						  <li><a class="dropdown-item" href="../new/new.html #wilson">Wilson Blade v8</a></li>
-						  <li><a class="dropdown-item" href="../new/new.html #yonex">Yonex Mania</a></li>
-						  <li><a class="dropdown-item" href="../new/new.html #nikenew">New Nike Collection</a></li>
-						</ul>
-					  </li>
-					  <!-- Sale -->
-					  <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sale</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <li><a class="dropdown-item" href="../sale/sale.html #headspecial">HEAD Special</a></li>
-						  <li><a class="dropdown-item" href="../sale/sale.html #bagsspecial">BAGS Special</a></li>
-						  <li><a class="dropdown-item" href="../sale/sale.html #selectedcas">Selected Clothes and Shoes</a></li>
-						  <li><a class="dropdown-item" href="../sale/sale.html #biggest">Biggest discounts</a></li>
-						  <li><a class="dropdown-item" href="../sale/sale.html #christmassale">Christmas Sale</a></li>
-						</ul>
-					  </li>
-					  <!-- Reviews -->
-					  <li class="nav-item">
-						<a class="nav-link" role="button" id="Homeandreviews" href="../reviews/reviews.html">Reviews</a>
-					  </li>
-					</ul>
-
-		 <!-- Cart -->
-						<ul class="navbar-nav ml-auto">
-							<li class="cart">
-								<a class="nav-link"  href="../cart/cart.html">
-									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-									<button type="button" class="btn btn-primary cartbutton" data-bs-toggle="modal" id="cartnavbar" data-bs-target="#staticBackdrop"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-										<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
-										<span>0</span>
-									</button>
-								</a>
-							</li>
-						</ul>
-				  </div>
-				</div>
-			  </nav>
+		<header>
+			<!-- Navbar -->
+			<div class="nav container">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<div class="container">
+						<a class="navbar-brand" href="../index.html"><img src="../images/logo.jpeg" height=auto width=auto alt="Tennis Mania Logo"></a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse"  id="navbarNav">
+							<ul class="navbar-nav m-lg-auto">
+								<!-- Home-->
+								<li class="nav-item">
+									<a class="nav-link active" id="Homeandreviews" aria-current="page" href="../index.html">Home</a>
+								</li>
+								<!-- Shop -->
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="shop.html #rackets">Rackets</a></li>
+										<li><a class="dropdown-item" href="shop.html #tennisBalls">Tennis balls</a></li>
+										<li><a class="dropdown-item" href="shop.html #tennisShoes">Tennis shoes</a></li>
+										<li><a class="dropdown-item" href="shop.html #clothing">Clothing</a></li>
+										<li><a class="dropdown-item" href="shop.html #accessories">Accessories</a></li>
+									</ul>
+								</li>
+								<!-- New -->
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">New</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="../new/new.html #rafa">Rafa Edition</a></li>
+										<li><a class="dropdown-item" href="../new/new.html #wilson">Wilson Blade v8</a></li>
+										<li><a class="dropdown-item" href="../new/new.html #yonex">Yonex Mania</a></li>
+										<li><a class="dropdown-item" href="../new/new.html #nikenew">New Nike Collection</a></li>
+									</ul>
+								</li>
+								<!-- Sale -->
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sale</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="../sale/sale.html #headspecial">HEAD Special</a></li>
+										<li><a class="dropdown-item" href="../sale/sale.html #bagsspecial">BAGS Special</a></li>
+										<li><a class="dropdown-item" href="../sale/sale.html #selectedcas">Selected Clothes and Shoes</a></li>
+										<li><a class="dropdown-item" href="../sale/sale.html #biggest">Biggest discounts</a></li>
+										<li><a class="dropdown-item" href="../sale/sale.html #christmassale">Christmas Sale</a></li>
+									</ul>
+								</li>
+								<!-- Reviews -->
+								<li class="nav-item">
+									<a class="nav-link" role="button" id="Homeandreviews" href="../reviews/reviews.html">Reviews</a>
+								</li>
+							</ul>
+						</div>
+						<!-- Cart -->
+						<div class="nav container">
+							<i class='bx bx-shopping-bag' id="cart-icon"></i>
+							<div class="cart">
+								<h2 class="cart-title">Your Cart</h2>
+								<div class="cart-content">
+									
+								</div>
+								<div class="total">
+									<div class="total-title">Total</div>
+									<div class="total-price">$0</div>
+								</div>
+								<button type="button" class="btn-buy">Checkout</button>
+								<i class='bx bx-x' id="close-cart"></i>
+							</div>
+						</div>
+					</div>
+				</nav>
 			</div>
-		<div class="container">
-			<div class="card bg-dark text-white">
+		</header>
+
+		<!-- Shop -->	
+		<section class="shop container">
+			<h2 class="section-title">Shop</h2>
+
+			<!-- Banner -->
+			<div class="product-banner">
 				<img src="../images/banner.png" class="card-img" alt="...">
 				<div class="card-img-overlay"></div>
 			</div>
 
 			<!-- Rackets -->
-			<nav class="navbar navbar-light bg-light" id="rackets">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#"><br>
-					<img src="../images/racket-small-logo.jpg" alt="" width="50" height="50" class="d-inline-block align-text-center">Rackets
-					</a>
-				</div>
-			</nav>
-			<div class="row row-cols-1 row-cols-md-3 g-4">
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Rackets/Babolat Pure Strike 179 euro.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Babolat Pure Strike</h5>
-							<p class="card-text">€179.00</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
+			<div class="banner">
+				<nav class="navbar navbar-light bg-light" id="rackets">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#"><br>
+						<img src="../images/racket-small-logo.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-center">Rackets
+						</a>
 					</div>
+				</nav>
+			</div>
+			<div class="shop-content">
+				<div class="product-box">
+					<img src="../images/Rackets/Babolat Pure Strike 179 euro.jpg" alt="" class="product-img">
+					<h2 class="product-title">Babolat Pure Strike</h2>
+					<span class="price">$179</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
 				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Rackets/HEAD Extreme Tour  180euro.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">HEAD Extreme Tour</h5>
-							<p class="card-text">€180.00</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-					</div>
+				<div class="product-box">
+					<img src="../images/Rackets/HEAD Extreme Tour  180euro.jpg" alt="" class="product-img">
+					<h2 class="product-title">HEAD Extreme Tour</h2>
+					<span class="price">$180</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
 				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Rackets/HEAD Graphene 360+  150euro.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">HEAD Graphene 360+</h5>
-							<p class="card-text">€150.00</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-					</div>
+				<div class="product-box">
+					<img src="../images/Rackets/HEAD Graphene 360+  150euro.jpg" alt="" class="product-img">
+					<h2 class="product-title">HEAD Graphene 360+</h2>
+					<span class="price">$150</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
 				</div>
 			</div>
-			<!-- Tennis Balls -->
-			<nav class="navbar navbar-light bg-light" id="tennisBalls">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#"><br>
-					<img src="../images/Balls-small-logo.jpg" alt="" width="50" height="50" class="d-inline-block align-text-center">Tennis Balls</a><br>
-				</div>
-			</nav>
-			<div class="row row-cols-1 row-cols-md-3 g-4">
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Balls/Babolat Team Can of 4 Balls 6.95 euro.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Babolat Team Can of 4 Balls</h5>
-							<p class="card-text">€6.95</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
+			<div class="banner">
+				<nav class="navbar navbar-light bg-light" id="rackets">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#"><br>
+						<img src="../images/racket-small-logo.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-center">Tennis Balls
+						</a>
 					</div>
+				</nav>
+			</div>
+			<div class="shop-content">
+				<div class="product-box">
+					<img src="../images/Balls/Babolat Team Can of 4 Balls 6.95 euro.jpg" alt="" class="product-img">
+					<h2 class="product-title">Babolat Team Can of 4 Balls</h2>
+					<span class="price">$6.95</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
 				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Balls/Babolat Team Clay Can of 4 Balls 5.85 euro.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Babolat Team Clay Can of 4 Balls</h5>
-							<p class="card-text">€5.85</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-					</div>
+				<div class="product-box">
+					<img src="../images/Balls/Babolat Team Clay Can of 4 Balls 5.85 euro.jpg" alt="" class="product-img">
+					<h2 class="product-title">Babolat Team Clay Can of 4 Balls</h2>
+					<span class="price">$5.85</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
 				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Balls/BIPACK OF 4 DUNLOP AUSTRALIAN OPEN BALLS 12.90 euro.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">BIPACK of 4 Dunlop Austrtalion Open Balls</h5>
-							<p class="card-text">€12.90</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-					</div>
+				<div class="product-box">
+					<img src="../images/Balls/BIPACK OF 4 DUNLOP AUSTRALIAN OPEN BALLS 12.90 euro.jpg" alt="" class="product-img">
+					<h2 class="product-title">BIPACK of 4 Dunlop Austrtalion Open Balls</h2>
+					<span class="price">$12.90</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
 				</div>
 			</div>
-			<!-- Tennis Shoes -->
-			<nav class="navbar navbar-light bg-light" id="tennisShoes">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#"><br>
-					<img src="../images/shoe-small-logo.jpg" alt="" width="50" height="50" class="d-inline-block align-text-center">Tennis Shoes</a><br>
-				</div>
-			</nav>
-			<div class="row row-cols-1 row-cols-md-3 g-4">
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Shoes/ADIDAS ADIZERO UBERSONIC 4 CLAY COURT SHOES 109e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">ADIDAS ADIZERO UBERSONIC 4 CLAY COURT SHOES</h5>
-							<p class="card-text">€109.00</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
+			<div class="banner">
+				<nav class="navbar navbar-light bg-light" id="rackets">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#"><br>
+						<img src="../images/racket-small-logo.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-center">Tennis Shoes
+						</a>
 					</div>
+				</nav>
+			</div>
+			<div class="shop-content">
+				<div class="product-box">
+					<img src="../images/Shoes/ADIDAS ADIZERO UBERSONIC 4 CLAY COURT SHOES 109e.jpg" alt="" class="product-img">
+					<h2 class="product-title">Adidas Ubersonic Shoes</h2>
+					<span class="price">$109</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
 				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Shoes/ADIDAS BARRICADE ALL COURT SHOES 112e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">ADIDAS BARRICADE ALL COURT SHOES</h5>
-							<p class="card-text">€122.00</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-					</div>
+				<div class="product-box">
+					<img src="../images/Shoes/ADIDAS BARRICADE ALL COURT SHOES 112e.jpg" alt="" class="product-img">
+					<h2 class="product-title">Adidas Barricade Shoes</h2>
+					<span class="price">$112</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
 				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Shoes/ASICS COURT FF CORIC NEW YORK ALL COURT SHOES 144e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">ASICS COURT FF NEW YORK ALL COURT SHOES</h5>
-							<p class="card-text">€144.00</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-					</div>
+				<div class="product-box">
+					<img src="../images/Shoes/ASICS COURT FF CORIC NEW YORK ALL COURT SHOES 144e.jpg" alt="" class="product-img">
+					<h2 class="product-title">Asics New York Shoes</h2>
+					<span class="price">$144</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
 				</div>
 			</div>
-			<!-- Clothing -->
-			<nav class="navbar navbar-light bg-light" id="clothing">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#"><br>
-					<img src="../images/clothing-small-logo.jpg" alt="" width="50" height="50" class="d-inline-block align-text-center">Clothing</a><br>
-				</div>
-			</nav>
-			<div class="row row-cols-1 row-cols-md-3 g-4">
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Clothing/ADIDAS A. RDY VISOR 14.90e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">ADIDAS A. RDY VISOR </h5>
-							<p class="card-text">€14.90</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
+			<div class="banner">
+				<nav class="navbar navbar-light bg-light" id="rackets">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#"><br>
+						<img src="../images/racket-small-logo.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-center">Clothing
+						</a>
 					</div>
+				</nav>
+			</div>
+			<div class="shop-content">
+				<div class="product-box">
+					<img src="../images/Clothing/ADIDAS A. RDY VISOR 14.90e.jpg" alt="" class="product-img">
+					<h2 class="product-title">Adidas Visor</h2>
+					<span class="price">$14.90</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
 				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Clothing/ADIDAS ASK CREW MC SOCKS 12e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">ADIDAS ASK CREW MC SOCKS</h5>
-							<p class="card-text">€12.00</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-					</div>
+				<div class="product-box">
+					<img src="../images/Clothing/ADIDAS ASK CREW MC SOCKS 12e.jpg" alt="" class="product-img">
+					<h2 class="product-title">Adidas Socks</h2>
+					<span class="price">$12</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
 				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Clothing/ADIDAS DRESS 54.94e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">ADIDAS WOMEN COURT DRESS</h5>
-							<p class="card-text">€54.94</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-					</div>
+				<div class="product-box">
+					<img src="../images/Clothing/ADIDAS DRESS 54.94e.jpg" alt="" class="product-img">
+					<h2 class="product-title">Adidas Dress</h2>
+					<span class="price">$54.95</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
 				</div>
 			</div>
-			<!-- Accessories -->
-			<nav class="navbar navbar-light bg-light" id="accessories">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#"><br>
-					<img src="../images/accessories-small-logo.jpg" alt="" width="50" height="50" class="d-inline-block align-text-center">Accessories</a><br>
-				</div>
-			</nav>
-			<div class="row row-cols-1 row-cols-md-3 g-4">
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Accessories/10 OVERGRIPS TOURNA GRIP ORIGINAL XL 18.90e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">10 OVERGRIPS TOURNA GRIP ORIGINAL XL</h5>
-							<p class="card-text">€18.90</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
+			<div class="banner">
+				<nav class="navbar navbar-light bg-light" id="rackets">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#"><br>
+						<img src="../images/racket-small-logo.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-center">Accessories
+						</a>
 					</div>
+				</nav>
+			</div>
+			<div class="shop-content">
+				<div class="product-box">
+					<img src="../images/Accessories/10 OVERGRIPS TOURNA GRIP ORIGINAL XL 18.90e.jpg" alt="" class="product-img">
+					<h2 class="product-title">10 Overgrips XL</h2>
+					<span class="price">$18.90</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
 				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Accessories/30 BABOLAT VS ORIGINAL OVERGRIPS 39.95e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">30 BABOLAT VS ORIGINAL OVERGRIPS</h5>
-							<p class="card-text">€39.95</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-					</div>
+				<div class="product-box">
+					<img src="../images/Accessories/30 BABOLAT VS ORIGINAL OVERGRIPS 39.95e.jpg" alt="" class="product-img">
+					<h2 class="product-title">30 Babolat Overgrips</h2>
+					<span class="price">$39.95</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
 				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Accessories/30 DUNLOP SUPER TAC OVERGRIPS 69.95e.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">30 DUNLOP SUPER TAC OVERGRIPS</h5>
-							<p class="card-text">€69.95</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-					</div>
+				<div class="product-box">
+					<img src="../images/Accessories/30 DUNLOP SUPER TAC OVERGRIPS 69.95e.jpg" alt="" class="product-img">
+					<h2 class="product-title">30 Dunlop Overgrips</h2>
+					<span class="price">$69.95</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
 				</div>
 			</div>
-			<!-- Minion Tennis -->
-			<nav class="navbar navbar-light bg-light" id="minions">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#"><br>
-					<img src="../images/Minions/minion-small-banner.jpg" alt="" width="50" height="50" class="d-inline-block align-text-center">Minion Tennis</a><br>
-				</div>
-			</nav>
-			<div class="row row-cols-1 row-cols-md-3 g-4">
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Minions/minion1.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">MINI RACQUET ULTRA 100 MINIONS</h5>
-							<p class="card-text">€32.00</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Minions/minion2.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">JUNIOR WILSON MINIONS 25 PACK</h5>
-							<p class="card-text">€59.90</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card h-100">
-						<img src="../images/Minions/minion3.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">WILSON MINIONS BOX O FUN VIBRATION DAMPENERS</h5>
-							<p class="card-text">€96.00</p>
-							<button type="button" class="btn btn-danger">Add to cart</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
-			<br>
-			<br>
+		</section>
 			<!-- Footer -->
 			<footer class="page-footer">
 				<div class="container-fluid",  id="footer">
@@ -386,7 +304,7 @@
         <!-- Javascript -->
         <script src="../script.js"></script>
 
-        <!-- Bootstrap Javascript -->
+         <!-- Bootstrap Javascript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>

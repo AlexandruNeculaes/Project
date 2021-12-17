@@ -1,4 +1,4 @@
-var myModal = document.getElementById('myModal')
+ /* var myModal = document.getElementById('myModal')
 var myInput = document.getElementById('myInput')
 
 myModal.addEventListener('shown.bs.modal', function () {
@@ -6,268 +6,135 @@ myModal.addEventListener('shown.bs.modal', function () {
 })
 
 function myFunction() {
-
     event.preventDefault();
-
     var fname = document.getElementById("fname").value;
-
     var mail = document.getElementById("email").value;
-
     alert(fname+", thank you for your details. We will be in touch via "+mail+" shortly.");
-
     var x=document.getElementById("form");
-
     x.style.display = "none";
+} */
 
+// Cart JS 
+let cartIcon = document.querySelector("#cart-icon");
+let cart = document.querySelector(".cart");
+let closeCart = document.querySelector("#close-cart");
+//open the cart
+cartIcon.onclick = () => {
+    cart.classList.add("active");
+};
+//close the cart
+closeCart.onclick = () => {
+    cart.classList.remove("active");
+};
+
+if(document.readyState == "loading") {
+    document.addEventListener("DOMContentLoaded", ready);
+} else {
+    ready();
+}
+
+function ready() {
+    //remove items
+    var removeCartButtons = document.getElementsByClassName("cart-remove");
+    console.log(removeCartButtons);
+    for(var i = 0; i < removeCartButtons.length; i++) {
+        var button = removeCartButtons[i];
+        button.addEventListener("click", removeCartItem);
+    }
+    //Quantity
+    var quantityInputs = document.getElementsByClassName("cart-quantity");
+    for(var i = 0; i < quantityInputs.length; i++) {
+        var input = quantityInputs[i];
+        input.addEventListener("change", quantityChanged);
+    }
+    //Add to Cart
+    var addCart = document.getElementsByClassName("add-cart");
+    for(var i = 0; i < addCart.length; i++) {
+        var button = addCart[i];
+        button.addEventListener("click", addCartClicked);
+    }
+    //buy button
+    document
+        .getElementsByClassName("btn-buy")[0]
+        .addEventListener("click", buyButtonClicked);
+}
+
+function buyButtonClicked() {
+    alert("Thank you for your order");
+    var cartContent = document.getElementsByClassName("cart-content")[0];
+    while (cartContent.hasChildNodes()) {
+        cartContent.removeChild(cartContent.firstChild);
+    }
+    updatetotal();
+}
+
+function removeCartItem(event) {
+    var buttonClicked = event.target;
+    buttonClicked.parentElement.remove();
+    updatetotal();
+}
+//Quantity Change
+function quantityChanged(event) {
+    var input = event.target;
+    if(isNaN(input.value) || input.value <= 0) {
+        input.value = 1;
+    }
+    updatetotal();
 } 
-/*
-// Cart JS - Daniel Hahn 
-let carts = document.querySelectorAll('.add-cart');
-
-//shop page
-let products = [
-    {
-        name: 'Babolat Pure Strike',
-        tag: 'Babolat Pure Strike 179 euro',
-        price: 179.00,
-        inCart: 0
-    },
-    {
-        name: 'HEAD Extreme Tour',
-        tag: 'HEAD Extreme Tour  180euro',
-        price: 180.00,
-        inCart: 0
-    },
-    {
-        name: 'HEAD Graphene 360+',
-        tag: 'HEAD Graphene 360+  150euro',
-        price: 150.00,
-        inCart: 0
-    },
-    {
-        name: 'Babolat Team Clay Can of 4 Balls',
-        tag: 'Babolat Team Can of 4 Balls 6.95 euro',
-        price: 6.95,
-        inCart: 0
-    },
-    {
-        name: 'Babolat Team Clay Can of 4 Balls',
-        tag: 'Babolat Team Clay Can of 4 Balls 5.85 euro',
-        price: 5.85,
-        inCart: 0
-    },
-    {
-        name: 'BIPACK of 4 Dunlop Austrtalion Open Balls',
-        tag: 'BIPACK OF 4 DUNLOP AUSTRALIAN OPEN BALLS 12.90 euro',
-        price: 12.90,
-        inCart: 0
-    },
-    {
-        name: 'ADIDAS ADIZERO UBERSONIC 4 CLAY COURT SHOES',
-        tag: 'ADIDAS ADIZERO UBERSONIC 4 CLAY COURT SHOES 109e',
-        price: 109.00,
-        inCart: 0
-    },
-    {
-        name: 'ADIDAS BARRICADE ALL COURT SHOES',
-        tag: 'ADIDAS BARRICADE ALL COURT SHOES 112e',
-        price: 112.00,
-        inCart: 0
-    },
-    {
-        name: 'ASICS COURT FF NEW YORK ALL COURT SHOES',
-        tag: 'ASICS COURT FF CORIC NEW YORK ALL COURT SHOES 144e',
-        price: 144.00,
-        inCart: 0
-    },
-    {
-        name: 'ADIDAS A. RDY VISOR',
-        tag: 'ADIDAS A. RDY VISOR 14.90e',
-        price: 14.90,
-        inCart: 0
-    },
-    {
-        name: 'ADIDAS ASK CREW MC SOCKS',
-        tag: 'ADIDAS ASK CREW MC SOCKS 12e',
-        price: 12.00,
-        inCart: 0
-    },
-    {
-        name: 'ADIDAS WOMEN COURT DRESS',
-        tag: 'ADIDAS DRESS 54.94e',
-        price: 54.94,
-        inCart: 0
-    },
-    {
-        name: '10 OVERGRIPS TOURNA GRIP ORIGINAL XL',
-        tag: '10 OVERGRIPS TOURNA GRIP ORIGINAL XL 18.90e',
-        price: 18.90,
-        inCart: 0
-    },
-    {
-        name: '30 BABOLAT VS ORIGINAL OVERGRIPS',
-        tag: '30 BABOLAT VS ORIGINAL OVERGRIPS 39.95e',
-        price: 39.95,
-        inCart: 0
-    },
-    {
-        name: '30 DUNLOP SUPER TAC OVERGRIPS',
-        tag: '30 DUNLOP SUPER TAC OVERGRIPS 69.95e',
-        price: 69.95,
-        inCart: 0
-    },
-    {
-        name: 'MINI RACQUET ULTRA 100 MINIONS',
-        tag: 'minion1',
-        price: 32.00,
-        inCart: 0
-    },
-    {
-        name: 'JUNIOR WILSON MINIONS 25 PACK',
-        tag: 'minion2',
-        price: 59.90,
-        inCart: 0
-    },
-    {
-        name: 'WILSON MINIONS BOX O FUN VIBRATION DAMPENERS',
-        tag: 'minion3',
-        price: 96.00,
-        inCart: 0
-    },
-/*
-//sale page
-    {
-        name: 'WILSON MINIONS BOX O FUN VIBRATION DAMPENERS',
-        tag: 'minion3',
-        price: 96.00,
-        inCart: 0
-    },
-    {
-        name: 'WILSON MINIONS BOX O FUN VIBRATION DAMPENERS',
-        tag: 'minion3',
-        price: 96.00,
-        inCart: 0
-    },
-    {
-        name: 'WILSON MINIONS BOX O FUN VIBRATION DAMPENERS',
-        tag: 'minion3',
-        price: 96.00,
-        inCart: 0
-    },
-    {
-        name: 'WILSON MINIONS BOX O FUN VIBRATION DAMPENERS',
-        tag: 'minion3',
-        price: 96.00,
-        inCart: 0
-    },
-    {
-        name: 'WILSON MINIONS BOX O FUN VIBRATION DAMPENERS',
-        tag: 'minion3',
-        price: 96.00,
-        inCart: 0
-    }, 
-
-
-
-
-for(let i=0; i<carts.length; i++){
-    carts[i].addEventListener('click', () => {
-        cartNumbers(products[i]);
-        totalCost(products[i]);
-    })
+//Add to Cart
+function addCartClicked(event) {
+    var button = event.target;
+    var shopProducts = button.parentElement;
+    var title = shopProducts.getElementsByClassName("product-title")[0].innerText;
+    var price = shopProducts.getElementsByClassName("price")[0].innerText;
+    var productImg = shopProducts.getElementsByClassName("product-img")[0].src;
+    addProductToCart(title, price, productImg);
+    updatetotal();
 }
-
-function onLoadCartNumbers(){
-    let productNumbers = localStorage.getItem('cartNumbers');
-    if(productNumbers){
-        document.querySelector('.cart span').textContent=productNumbers;
-    }
-}
-
-function cartNumbers(product){
-    let productNumbers = localStorage.getItem('cartNumbers');
-    productNumbers = parseInt(productNumbers);
-    if(productNumbers){
-        localStorage.setItem('cartNumbers', productNumbers+1);
-        document.querySelector('.cart span').textContent=productNumbers+1;
-    }
-    else{
-        localStorage.setItem('cartNumbers', 1);
-        document.querySelector('.cart span').textContent=1;
-    }
-    setItems(product);
-}
-
-function setItems(product){
-    let cartItems = localStorage.getItem('productsInCart');
-    cartItems = JSON.parse(cartItems);
-    if(cartItems != null){
-        if(cartItems[product.tag] == undefined){
-            cartItems= {
-                ...cartItems,
-                [product.tag]: product
-            }
-        }
-        cartItems[product.tag].inCart +=1;
-    }
-    else{
-        product.inCart=1;
-        cartItems = {
-            [product.tag]: product
+function addProductToCart(title, price, productImg) {
+    var cartShopBox = document.createElement("div");
+    cartShopBox.classList.add("cart-box");
+    var cartItems = document.getElementsByClassName("cart-content")[0];
+    var cartItemsNames = cartItems.getElementsByClassName("cart-product-title");
+    for(var i = 0; i < cartItemsNames.length; i++) {
+        if(cartItemsNames[i].innerText == title) {
+            alert("This Item is already in your cart");
+            return;
         }
     }
-    localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+    var cartShopBox = document.createElement("div");
+    cartShopBox.classList.add("cart-box");
+    var cartBoxContent = `
+                            <img src="${productImg}" alt="" class="cart-img">
+                            <div class="detail-box">
+                                <div class="cart-product-title">"${title}</div>
+                                <div class="cart-price">${price}</div>
+                                <input type="number" value="1" class="cart-quantity">
+                            </div>
+                            <i class='bx bxs-trash-alt cart-remove'></i>`;
+    cartShopBox.innerHTML = cartBoxContent;
+    cartItems.append(cartShopBox);
+    cartShopBox
+        .getElementsByClassName("cart-remove")[0]
+        .addEventListener("click", removeCartItem);
+    cartShopBox
+        .getElementsByClassName("cart-quantity")[0]
+        .addEventListener("change", quantityChanged); 
 }
 
-function totalCost(product){
-    let cartCost=localStorage.getItem('totalCost');
-    if(cartCost != null){
-        cartCost=parseInt(cartCost);
-        localStorage.setItem("totalCost", cartCost + product.price);
+//Total
+function updatetotal() {
+    var cartContent = document.getElementsByClassName("cart-content")[0];
+    var cartBoxes = cartContent.getElementsByClassName("cart-box");
+    var total = 0;
+    for(var i = 0; i < cartBoxes.length; i++) {
+        var cartBox = cartBoxes[i];
+        var priceElement = cartBox.getElementsByClassName("cart-price")[0];
+        var quantityElement = cartBox.getElementsByClassName("cart-quantity")[0];
+        var price = parseFloat(priceElement.innerText.replace("$", ""));
+        var quantity = quantityElement.value;
+        total = total + (price * quantity);
+        total = Math.round(total *100) / 100;
     }
-    else{
-        localStorage.setItem("totalCost", product.price);
-    }
-}
-
-function displayCart(){
-    let cartItems = localStorage.getItem('productsInCart')
-    cartItems = JSON.parse(cartItems);
-    let productContainer = document.querySelector(".products");
-    let cartCost=localStorage.getItem('totalCost');
-    if(cartItems && productContainer) {
-        productContainer.innerHTML = '';
-        Object.values(cartItems).map(item => {
-            productContainer.innerHTML += `
-            <div class="product">
-                <ion-icon name="close-circle"></ion-icon>
-                <img src="./images/${item.tag}.jpg">
-                <span>${item.name}</span>
-            </div>
-            <div class="price">€${item.price}</div>
-            <div class="quantity">
-                <ion-icon class="decrease" name="arrow-dropleft-circle"></ion-icon>
-                <span>${item.inCart}</span>
-                <ion-icon class=increase" name="arrow-dropright-circle"></ion-icon>
-            </div>
-            <div class="total">
-                €${item.inCart * item.price}
-            </div>
-            `;
-        });
-
-        product.container.innerHTML += `
-        <div class="basketTotalContainer">
-            <h4 class="basketTotalTitle">
-                Basket Total
-            </h4>
-            <h4 class="basketTotal">
-                €${cartCost}
-            </h4>
-        `;
-
-    }
-}
-
-onLoadCartNumbers(); 
-//new page */
+        document.getElementsByClassName("total-price")[0].innerText = "$" + total;
+} 

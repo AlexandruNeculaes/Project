@@ -11,86 +11,309 @@
         <!-- Our CSS-->
         <link rel="stylesheet" href="../styles/style.css">
 
-		<!-- Javascript (load in background)-->
-		<script src="script.js" async></script>
+		<!-- Icons -->
+		<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
         <!-- Page title -->
-        <title>Sale Page</title>
+        <title>Shop</title>
     </head>
     <body>
-        <!-- Navbar -->
-		<div id="navbar_wrapper"> 
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="container">
-				  <a class="navbar-brand" href="../index.html"><img src="../images/logo.jpeg" height=auto width=auto alt="Tennis Mania Logo"></a>
-				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				  </button>
-				  <div class="collapse navbar-collapse"  id="navbarNav">
-					<ul class="navbar-nav m-lg-auto">
-					  <!-- Home-->
-					  <li class="nav-item">
-						<a class="nav-link active" id="Homeandreviews" aria-current="page" href="../index.html">Home</a>
-					  </li>
-					  <!-- Shop -->
-					  <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <li><a class="dropdown-item" href="../shop/shop.html #rackets">Rackets</a></li>
-						  <li><a class="dropdown-item" href="../shop/shop.html #tennisBalls">Tennis balls</a></li>
-						  <li><a class="dropdown-item" href="../shop/shop.html #tennisShoes">Tennis shoes</a></li>
-						  <li><a class="dropdown-item" href="../shop/shop.html #clothing">Clothing</a></li>
-						  <li><a class="dropdown-item" href="../shop/shop.html #accessories">Accessories</a></li>
-						</ul>
-					  </li>
-					  <!-- New -->
-					  <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">New</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <li><a class="dropdown-item" href="../new/new.html #rafa">Rafa Edition</a></li>
-						  <li><a class="dropdown-item" href="../new/new.html #wilson">Wilson Blade v8</a></li>
-						  <li><a class="dropdown-item" href="../new/new.html #yonex">Yonex Mania</a></li>
-						  <li><a class="dropdown-item" href="../new/new.html #nikenew">New Nike Collection</a></li>
-						</ul>
-					  </li>
-					  <!-- Sale -->
-					  <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sale</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <li><a class="dropdown-item" href="sale.html #headspecial">HEAD Special</a></li>
-						  <li><a class="dropdown-item" href="sale.html #bagsspecial">BAGS Special</a></li>
-						  <li><a class="dropdown-item" href="sale.html #selectedcas">Selected Clothes and Shoes</a></li>
-						  <li><a class="dropdown-item" href="sale.html #biggest">Biggest discounts</a></li>
-						  <li><a class="dropdown-item" href="sale.html #christmassale">Christmas Sale</a></li>
-						</ul>
-					  </li>
-					  <!-- Reviews -->
-					  <li class="nav-item">
-						<a class="nav-link" role="button" id="Homeandreviews" href="../reviews/reviews.html">Reviews</a>
-					  </li>
-					</ul>
-		 <!-- Cart -->
-						<ul class="navbar-nav ml-auto">
-							<li class="cart">
-								<a class="nav-link"  href="../cart/cart.html">
-									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-									<button type="button" class="btn btn-primary cartbutton" data-bs-toggle="modal" id="cartnavbar" data-bs-target="#staticBackdrop"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-										<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
-										<span>0</span>
-									</button>
-								</a>
-							</li>
-						</ul>
-				  </div>
-				</div>
-			  </nav>
+		<header>
+			<!-- Navbar -->
+			<div class="nav container">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<div class="container">
+						<a class="navbar-brand" href="../index.html"><img src="../images/logo.jpeg" height=auto width=auto alt="Tennis Mania Logo"></a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse"  id="navbarNav">
+							<ul class="navbar-nav m-lg-auto">
+								<!-- Home-->
+								<li class="nav-item">
+									<a class="nav-link active" id="Homeandreviews" aria-current="page" href="../index.html">Home</a>
+								</li>
+								<!-- Shop -->
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="shop.html #rackets">Rackets</a></li>
+										<li><a class="dropdown-item" href="shop.html #tennisBalls">Tennis balls</a></li>
+										<li><a class="dropdown-item" href="shop.html #tennisShoes">Tennis shoes</a></li>
+										<li><a class="dropdown-item" href="shop.html #clothing">Clothing</a></li>
+										<li><a class="dropdown-item" href="shop.html #accessories">Accessories</a></li>
+									</ul>
+								</li>
+								<!-- New -->
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">New</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="../new/new.html #rafa">Rafa Edition</a></li>
+										<li><a class="dropdown-item" href="../new/new.html #wilson">Wilson Blade v8</a></li>
+										<li><a class="dropdown-item" href="../new/new.html #yonex">Yonex Mania</a></li>
+										<li><a class="dropdown-item" href="../new/new.html #nikenew">New Nike Collection</a></li>
+									</ul>
+								</li>
+								<!-- Sale -->
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sale</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="../sale/sale.html #headspecial">HEAD Special</a></li>
+										<li><a class="dropdown-item" href="../sale/sale.html #bagsspecial">BAGS Special</a></li>
+										<li><a class="dropdown-item" href="../sale/sale.html #selectedcas">Selected Clothes and Shoes</a></li>
+										<li><a class="dropdown-item" href="../sale/sale.html #biggest">Biggest discounts</a></li>
+										<li><a class="dropdown-item" href="../sale/sale.html #christmassale">Christmas Sale</a></li>
+									</ul>
+								</li>
+								<!-- Reviews -->
+								<li class="nav-item">
+									<a class="nav-link" role="button" id="Homeandreviews" href="../reviews/reviews.html">Reviews</a>
+								</li>
+							</ul>
+						</div>
+						<!-- Cart -->
+						<div class="nav container">
+							<i class='bx bx-shopping-bag' id="cart-icon"></i>
+							<div class="cart">
+								<h2 class="cart-title">Your Cart</h2>
+								<div class="cart-content">
+									
+								</div>
+								<div class="total">
+									<div class="total-title">Total</div>
+									<div class="total-price">$0</div>
+								</div>
+								<button type="button" class="btn-buy">Checkout</button>
+								<i class='bx bx-x' id="close-cart"></i>
+							</div>
+						</div>
+					</div>
+				</nav>
 			</div>
-          <div class="container">
+		</header> 
+		<!-- Shop -->	
+		<section class="shop container">
+			<h2 class="section-title">Shop</h2>
+
+			<!-- Banner -->
+			<div class="product-banner">
+				<img src="../images/banner.png" class="card-img" alt="...">
+				<div class="card-img-overlay"></div>
+			</div>
+
+			<!-- Rackets -->
+			<div class="banner">
+				<nav class="navbar navbar-light bg-light" id="rackets">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#"><br>
+						<img src="../images/racket-small-logo.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-center">Head Special
+					</div>
+				</nav>
+			</div>
+			<div class="shop-content">
+				<div class="product-box">
+					<img src="../images/Head card/HEAD PERFORMANCE CILIC SHORTS 48e.jpg" alt="" class="product-img">
+					<h2 class="product-title">HEAD PERFORMANCE SHORTS</h2>
+					<span class="price">$48</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
+				</div>
+				<div class="product-box">
+					<img src="../images/Head card/HEAD PERFORMANCE CILIC T-SHIRT 48e.jpg" alt="" class="product-img">
+					<h2 class="product-title">HEAD Performance T-Shirt</h2>
+					<span class="price">$48</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
+				</div>
+				<div class="product-box">
+					<img src="../images/Rackets/HEAD Graphene 360+  150euro.jpg" alt="" class="product-img">
+					<h2 class="product-title">HEAD Graphene 360+</h2>
+					<span class="price">$150</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
+				</div>
+			</div>
+			<div class="banner">
+				<nav class="navbar navbar-light bg-light" id="rackets">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#"><br>
+						<img src="../images/racket-small-logo.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-center">Bags Special
+						</a>
+					</div>
+				</nav>
+			</div>
+			<div class="shop-content">
+				<div class="product-box">
+					<img src="../images/Balls/Babolat Team Can of 4 Balls 6.95 euro" alt="" class="product-img">
+					<h2 class="product-title">Babolat Team Can of 4 Balls</h2>
+					<span class="price">$6.95</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
+				</div>
+				<div class="product-box">
+					<img src="../images/Balls/Babolat Team Clay Can of 4 Balls 5.85 euro.jpg" alt="" class="product-img">
+					<h2 class="product-title">Babolat Team Clay Can of 4 Balls</h2>
+					<span class="price">$5.85</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
+				</div>
+				<div class="product-box">
+					<img src="../images/Balls/BIPACK OF 4 DUNLOP AUSTRALIAN OPEN BALLS 12.90 euro.jpg" alt="" class="product-img">
+					<h2 class="product-title">BIPACK of 4 Dunlop Austrtalion Open Balls</h2>
+					<span class="price">$12.90</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
+				</div>
+			</div>
+			<div class="banner">
+				<nav class="navbar navbar-light bg-light" id="rackets">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#"><br>
+						<img src="../images/racket-small-logo.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-center">Selected Clothes & Shoes
+						</a>
+					</div>
+				</nav>
+			</div>
+			<div class="shop-content">
+				<div class="product-box">
+					<img src="../images/Shoes/ADIDAS ADIZERO UBERSONIC 4 CLAY COURT SHOES 109e.jpg" alt="" class="product-img">
+					<h2 class="product-title">Adidas Ubersonic Shoes</h2>
+					<span class="price">$109</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
+				</div>
+				<div class="product-box">
+					<img src="../images/Shoes/ADIDAS BARRICADE ALL COURT SHOES 112e.jpg" alt="" class="product-img">
+					<h2 class="product-title">Adidas Barricade Shoes</h2>
+					<span class="price">$112</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
+				</div>
+				<div class="product-box">
+					<img src="../images/Shoes/ASICS COURT FF CORIC NEW YORK ALL COURT SHOES 144e.jpg" alt="" class="product-img">
+					<h2 class="product-title">Asics New York Shoes</h2>
+					<span class="price">$144</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
+				</div>
+			</div>
+			<div class="banner">
+				<nav class="navbar navbar-light bg-light" id="rackets">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#"><br>
+						<img src="../images/racket-small-logo.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-center">Biggest Discounts
+						</a>
+					</div>
+				</nav>
+			</div>
+			<div class="shop-content">
+				<div class="product-box">
+					<img src="../images/Clothing/ADIDAS A. RDY VISOR 14.90e.jpg" alt="" class="product-img">
+					<h2 class="product-title">Adidas Visor</h2>
+					<span class="price">$14.90</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
+				</div>
+				<div class="product-box">
+					<img src="../images/Clothing/ADIDAS ASK CREW MC SOCKS 12e.jpg" alt="" class="product-img">
+					<h2 class="product-title">Adidas Socks</h2>
+					<span class="price">$12</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
+				</div>
+				<div class="product-box">
+					<img src="../images/Clothing/ADIDAS DRESS 54.94e.jpg" alt="" class="product-img">
+					<h2 class="product-title">Adidas Dress</h2>
+					<span class="price">$54.95</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
+				</div>
+			</div>
+			<div class="banner">
+				<nav class="navbar navbar-light bg-light" id="rackets">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#"><br>
+						<img src="../images/racket-small-logo.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-center">Christmas Sale
+						</a>
+					</div>
+				</nav>
+			</div>
+			<div class="shop-content">
+				<div class="product-box">
+					<img src="../images/Accessories/10 OVERGRIPS TOURNA GRIP ORIGINAL XL 18.90e.jpg" alt="" class="product-img">
+					<h2 class="product-title">10 Overgrips XL</h2>
+					<span class="price">$18.90</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
+				</div>
+				<div class="product-box">
+					<img src="../images/Accessories/30 BABOLAT VS ORIGINAL OVERGRIPS 39.95e.jpg" alt="" class="product-img">
+					<h2 class="product-title">30 Babolat Overgrips</h2>
+					<span class="price">$39.95</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
+				</div>
+				<div class="product-box">
+					<img src="../images/Accessories/30 DUNLOP SUPER TAC OVERGRIPS 69.95e.jpg" alt="" class="product-img">
+					<h2 class="product-title">30 Dunlop Overgrips</h2>
+					<span class="price">$69.95</span>
+					<i class='bx bx-shopping-bag add-cart'></i>
+				</div>
+			</div>
+		</section>
+			<!-- Footer -->
+			<footer class="page-footer">
+				<div class="container-fluid",  id="footer">
+					<div class="row top">
+						<div class="col-md-4 text-center mr-auto" style="padding: 15px;">
+							<ul class="list-unstyled footer-list">
+								<!-- Link to contact form -->
+								<li>
+								  <a href="../info/info.html #contact" id="footercontact">
+									Contact
+								  </a>
+								</li>
+								<!-- Link for delivery information -->
+								<li>
+								  <a href="../info/info.html #delivery" id="footercontact">
+									Delivery Information
+								  </a>
+								</li>
+								<!-- Link for return policy -->
+								<li>
+								  <a href="../info/info.html #returns" id="footercontact">
+									Return Policy
+								  </a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4 text-center bottom" style="padding: 35px;">
+
+							<a href="https://www.linkedin.com/in/ryan-o-beirne-14a0a6177/" target="_blank" title="Facebook"><img src="../images/facebook.svg" alt="Facebook" width="35" height="35"></a>
+							<a href="https://www.linkedin.com/in/alexandru-neculaes-913917114/" target="_blank" title="Instagram"><img src="../images/instagram.svg" alt="Instagram" width="35" height="35"></a>
+							<a href="https://www.linkedin.com/in/daniel-hahn21/" target="_blank" title="Youtube"><img src="../images/youtube.svg" alt="Youtube" width="35" height="35"></a>
+							<a href="https://github.com/AlexandruNeculaes/Project.git" target="_blank" title="Contact"><img src="../images/mail.svg" alt="Contact email" width="35" height="35"></a>
+
+						</div>
+						<div class="col-md-4 text-center ml-auto" style="padding: 15px;">
+							<div class="customer-service">
+								<div class="customer-service">
+									Customer Service 1800 678 234
+								</div>
+								<div class="opening-times">
+									Monday to Friday 09:00 to 19:00 <br>
+									Saturday 10:00 to 17:00
+								</div>
+								</div>
+							</div>
+							<!--Copyright-->
+							<div class="col-12 text-shadow text-center">
+								&#169; 2021 Copyright: Daniel, Ryan and Alexandru | NCI
+						</div>
+					</div>
+			</footer>
+
+        <!-- Javascript -->
+        <script src="../script.js"></script>
+
+         <!-- Bootstrap Javascript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>        
+		 
+		
+		<!-- <div class="container">
 			<div class="card bg-dark text-white">
 				<img src="../images/Sale-banner-christmas.jpg" class="card-img" alt="...">
 				<div class="card-img-overlay"></div>
 			</div>
-			<!-- HEAD Special-->
+			 HEAD Special
 			<nav class="navbar navbar-light bg-light" id="headspecial">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="#"><img src="../images/Head card/head-vector-logo.png" alt="" width="50" height="50" class="d-inline-block align-text-center">HEAD Special</a>
@@ -140,7 +363,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- BAGS Special-->
+			BAGS Special
 			<nav class="navbar navbar-light bg-light" id="bagsspecial">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="#"><img src="../images/Bags/bag-logo.jpg" alt="" width="50" height="50" class="d-inline-block align-text-center">BAGS Special</a>
@@ -190,7 +413,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- Selected Clothes and Shoes-->
+			 Selected Clothes and Shoes
 			<nav class="navbar navbar-light bg-light" id="selectedcas">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="#"><img src="../images/clothing-small-logo.jpg" alt="" width="50" height="50" class="d-inline-block align-text-center">Selected Clothes and Shoes</a>
@@ -237,7 +460,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- Biggest discounts-->
+			 Biggest discounts
 			<nav class="navbar navbar-light bg-light" id="biggest">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="#"><img src="../images/Last Season/discount logo.jpg" width="50" height="50" class="d-inline-block align-text-center">Biggest discounts</a>
@@ -284,7 +507,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- Christmas Sale-->
+			 Christmas Sale
 			<nav class="navbar navbar-light bg-light" id="christmassale">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="#"><img src="../images/Carousel Christmas/logo sale christmas.jpg" alt="" width="50" height="50" class="d-inline-block align-text-center">Christmas Sale</a>
@@ -337,63 +560,4 @@
 			</div>
 		</div>
 		<br>
-		<br>
-		<!-- Footer -->
-		<footer class="page-footer">
-			<div class="container-fluid",  id="footer">
-				<div class="row top">
-					<div class="col-md-4 text-center mr-auto" style="padding: 15px;">
-						<ul class="list-unstyled footer-list">
-							<!-- Link to contact form -->
-							<li>
-								<a href="../info/info.html #contact" id="footercontact">
-								Contact
-								</a>
-							</li>
-							<!-- Link for delivery information -->
-							<li>
-								<a href="../info/info.html #delivery" id="footercontact">
-								Delivery Information
-								</a>
-							</li>
-							<!-- Link for return policy -->
-							<li>
-								<a href="../info/info.html #returns" id="footercontact">
-								Return Policy
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-md-4 text-center bottom" style="padding: 35px;">
-	
-						<a href="https://www.linkedin.com/in/ryan-o-beirne-14a0a6177/" target="_blank" title="Facebook"><img src="../images/facebook.svg" alt="Facebook" width="35" height="35"></a>
-						<a href="https://www.linkedin.com/in/alexandru-neculaes-913917114/" target="_blank" title="Instagram"><img src="../images/instagram.svg" alt="Instagram" width="35" height="35"></a>
-						<a href="https://www.linkedin.com/in/daniel-hahn21/" target="_blank" title="Youtube"><img src="../images/youtube.svg" alt="Youtube" width="35" height="35"></a>
-						<a href="https://github.com/AlexandruNeculaes/Project.git" target="_blank" title="Contact"><img src="../images/mail.svg" alt="Contact email" width="35" height="35"></a>
-	
-					</div>
-					<div class="col-md-4 text-center ml-auto" style="padding: 15px;">
-						<div class="customer-service">
-							<div class="customer-service">
-								Customer Service 1800 678 234
-							</div>
-							<div class="opening-times">
-								Monday to Friday 09:00 to 19:00 <br>
-								Saturday 10:00 to 17:00
-							</div>
-							</div>
-						</div>
-						<!--Copyright-->
-						<div class="col-12 text-shadow text-center">
-							&#169; 2021 Copyright: Daniel, Ryan and Alexandru | NCI
-					</div>
-				</div>
-		</footer>
-
-        <!-- Javascript -->
-        <script src="script.js"></script>
-
-        <!-- Bootstrap Javascript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
-</html>
+		<br> -->
