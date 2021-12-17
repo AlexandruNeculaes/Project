@@ -48,7 +48,7 @@ function ready() {
         input.addEventListener("change", quantityChanged);
     }
     //Add to Cart
-    var addCart = document.getElementsByClassName("add-cart");
+    var addCart = document.getElementsByClassName("product-box");
     for(var i = 0; i < addCart.length; i++) {
         var button = addCart[i];
         button.addEventListener("click", addCartClicked);
