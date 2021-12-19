@@ -1,8 +1,1 @@
-function myFunction() {
-    event.preventDefault();
-    var fname = document.getElementById("fname").value;
-    var mail = document.getElementById("email").value;
-    alert(fname+", thank you for your details. We will be in touch via "+mail+" shortly.");
-    var x=document.getElementById("form");
-    x.style.display = "none";
-}
+function myFunction(){event.preventDefault();var e=document.getElementById("fname").value,t=document.getElementById("email").value;alert(e+", thank you for your details. We will be in touch via "+t+" shortly."),document.getElementById("form").style.display="none"}
