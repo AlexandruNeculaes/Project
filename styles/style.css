@@ -188,15 +188,63 @@ li a:hover {
 #rackets {
   width: 50px;
 }
-
+#tennisBalls{
+  width: 50px;
+}
+#tennisShoes{
+  width: 50px;
+}
+#accessories{
+  width: 50px;
+}
+#yonex{
+  width: 50px;
+}
+#nikenew{
+  width: 50px;
+}
+#bagsspecial{
+  width: 80px;
+}
+#christmassale{
+  width: 80px;
+}
+#biggest{
+  width: 80px;
+}
+#selectedcas{
+  width: 50px;
+}
+#headspecial{
+  width: 50px;
+}
+#wilson{
+  width: 25px;
+}
+#clothing{
+  width: 50px;
+}
+#rafa{
+  width: 50px; 
+}
+#minions{
+  width: 50px; 
+}
 #carouselExampleDark {
   padding-top: 8rem;
 }
-
+#dan1{
+  width: 50px; 
+}
 .shop {
   margin-top: 2rem;
 }
-
+.bx-like{
+  font-size: 3rem;
+  cursor: pointer;
+  color: var(--main-color);
+ 
+}
 .shop-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, auto));
