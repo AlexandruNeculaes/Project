@@ -62,10 +62,6 @@ li a:hover {
   justify-content: space-between;
 }
 
-.home {
-  padding-left: 40px;
-}
-
 #cart-icon {
   font-size: 1.8rem;
   cursor: pointer;
@@ -386,11 +382,8 @@ background-color: cyan;
   }
 }
 
-@media (max-width: 400px) {
-  .cart{
-    width: 10px;
-  
-  }
+@media (max-width: 600px) {
+
   
   body {
     background-color: var(--main-color);
@@ -406,7 +399,7 @@ background-color: cyan;
     font-size: 10px;
   }
   #form{
-    width: 313px; 
+    width: 330px; 
   }
   .btn-danger{
     width: 100px;
@@ -416,7 +409,7 @@ background-color: cyan;
  
 }
 
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
   h1{
     font-size: 20px;
   }
@@ -426,4 +419,4 @@ background-color: cyan;
   .shop {
     margin-top: 1rem;
   }
-} 
+} */
