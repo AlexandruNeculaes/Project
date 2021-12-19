@@ -17,10 +17,10 @@
         <!-- Page title -->
         <title>Reviews</title>
     </head>
-    <body>
+    <body class="reviewbg">
 		<header>
 			<!-- Navbar -->
-			<div class="nav container">
+			<div class="navbar_wrapper">
 				<nav class="navbar navbar-expand-lg navbar-light bg-light">
 					<div class="container">
 						<a class="navbar-brand" href="../index.html"><img src="../images/logo.jpeg" height=auto width=auto alt="Tennis Mania Logo"></a>
@@ -30,7 +30,7 @@
 						<div class="collapse navbar-collapse"  id="navbarNav">
 							<ul class="navbar-nav m-lg-auto">
 								<!-- Home-->
-								<li class="nav-item">
+								<li class="nav-item home">
 									<a class="nav-link active" id="Homeandreviews" aria-current="page" href="../index.html">Home</a>
 								</li>
 								<!-- Shop -->
@@ -58,11 +58,11 @@
 								<li class="nav-item dropdown">
 									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sale</a>
 									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<li><a class="dropdown-item" href="../sale/index.html">HEAD Special</a></li>
-										<li><a class="dropdown-item" href="../sale/index.html">BAGS Special</a></li>
-										<li><a class="dropdown-item" href="../sale/index.html">Selected Clothes and Shoes</a></li>
-										<li><a class="dropdown-item" href="../sale/index.html">Biggest discounts</a></li>
-										<li><a class="dropdown-item" href="../sale/index.html">Christmas Sale</a></li>
+										<li><a class="dropdown-item" href="../sale/index.html #headspecial">HEAD Special</a></li>
+										<li><a class="dropdown-item" href="../sale/index.html #bagsspecial">BAGS Special</a></li>
+										<li><a class="dropdown-item" href="../sale/index.html #selectedcas">Selected Clothes and Shoes</a></li>
+										<li><a class="dropdown-item" href="../sale/index.html #biggest">Biggest discounts</a></li>
+										<li><a class="dropdown-item" href="../sale/index.html #christmassale">Christmas Sale</a></li>
 									</ul>
 								</li>
 								<!-- Reviews -->
@@ -91,15 +91,16 @@
 				</nav>
 			</div>
 		</header> 
+		<br><br><br><br>
 
 		<!-- Headline -->
-		<div class="justify-content-center">
+		<div class="justify-content-center" id="reviewtext">
 			<div class="col-12">
 				<br>
 				<h2 class="text-center">Customer Reviews</h2>
 			</div>
 		</div>
-		<div class="col-md-12">
+		<div class="col-md-12" id="reviewtext">
 			<h3 class="text-center">Did you enjoy your experience?</h3>
 			<p class="text-center">If you have any comments and wish to leave a review please do so below. We really appreciated your feedback.</p>
 		</div>
@@ -145,7 +146,7 @@
 		<div class="justify-content-center">
 			<div class="col-12 text-center d-block">
 				<!-- Button to add review  -->
-				<a href="/review/add/" class="btn btn-primary rounded-1 btn-md justify-content-center mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Add Your Review</a>
+				<a href="/review/add/" class="btn btn-success rounded-1 btn-md justify-content-center mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Add Your Review</a>
 
 				<!-- Modal -->
 				<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">

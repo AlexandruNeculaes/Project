@@ -25,6 +25,11 @@ body {
   margin: auto;
 }
 
+.reviewbg {
+  background-image: url("../images/reviewbg.png");
+  background-color: #cccccc;
+}
+
 .container {
   max-width: 1068px;
   margin: auto;
@@ -245,6 +250,13 @@ li a:hover {
   color: var(--main-color);
  
 }
+
+#reviewtext {
+  color: white;
+}
+.sale {
+  color: red;
+}
 .shop-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, auto));
@@ -318,11 +330,6 @@ background-image: linear-gradient(
 #footercontact{
   color: var(--text-color);
 }
-
-.social {
-  width
-}
-
 
 /* model */
 .modal-content{
