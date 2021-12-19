@@ -70,7 +70,7 @@ li a:hover {
   font-size: 1.8rem;
   cursor: pointer;
   color: var(--main-color);
-  padding-left: 360px;
+  padding-left: 250px;
 }
 
 /* Cart */
@@ -387,20 +387,41 @@ background-color: cyan;
 }
 
 @media (max-width: 400px) {
-  .nav {
-    padding: 11px;
+  .cart{
+    width: 10px;
+  
   }
-  .cart {
-    width: 320px;
-  }
+  
   body {
     background-color: var(--main-color);
   }
+  .logo{
+    width: 100px;
+    height: 50px;
+  }
+  h1{
+    font-size: 10px;
+  }
+  h5{
+    font-size: 10px;
+  }
+  #form{
+    width: 313px; 
+  }
+  .btn-danger{
+    width: 100px;
+    height: 20px;
+    font-size: 10px;
+  }
+ 
 }
 
 @media (max-width: 320px) {
-  .cart {
-    width: 260px;
+  h1{
+    font-size: 20px;
+  }
+  h5{
+    font-size: 20px;
   }
   .shop {
     margin-top: 1rem;
